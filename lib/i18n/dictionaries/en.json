@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "philosophy": "Philosophy",
+    "blog": "Blog",
+    "notes": "Notes"
+  },
+  "hero": {
+    "tagline": "SEMICOLON;DEV — Where Code Meets Curiosity",
+    "title": "Forging digital",
+    "roles": {
+      "0": "building interfaces",
+      "1": "exploring systems",
+      "2": "breaking barriers",
+      "3": "forging ideas",
+      "4": "crafting code"
+    },
+    "description": "Turning ideas into working systems.",
+    "description2": "From web, apps, data automation, AI analysis, Web3, to virtualized clusters — \nWe design, develop, and operate everything.",
+    "explore": "explore projects",
+    "introduction": "introduction"
+  },
+  "status": {
+    "building": "status: building",
+    "forging": "forging",
+    "experiments": "experiments loaded",
+    "lastSpark": "last spark",
+    "today": "today"
+  },
+  "footer": {
+    "connect": "Connect",
+    "buildTogether": "Let's build something ",
+    "together": "together",
+    "description": "Ready to start a new project?\nWith extensive development experience across Web, Mobile, AI, and Blockchain,\nwe provide optimal solutions tailored to your needs.",
+    "sendSignal": "send a signal",
+    "findMe": "Find me elsewhere",
+    "forgedWith": "Forged with",
+    "and": "&",
+    "code": "code",
+    "rights": "All experiments reserved",
+    "strengths": {
+      "title": "Our Strengths",
+      "items": [
+        "End-to-End development experience (from planning to operations)",
+        "Diverse tech stack expertise (Web/App/AI/Blockchain)",
+        "Business model-oriented development",
+        "Building systems with rich operational experience"
+      ]
+    },
+    "projectCategories": {
+      "title": "Key Project Areas",
+      "items": [
+        "Web/Mobile",
+        "AI/ML",
+        "Web3/Blockchain",
+        "Offerwall",
+        "Payment",
+        "Automation",
+        "Infrastructure",
+        "SDK"
+      ]
+    }
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "tagline": "Our Philosophy",
+    "description": "A practical full-stack development team that considers business models, operational structures, and growth strategies beyond simple development.",
+    "mainTitle": "Practical Full-Stack Development Team",
+    "quote": "Beyond simple development, we are a practical full-stack development team that considers business models, operational structures, and growth strategies.",
+    "intro": "We possess strong practical experience particularly in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization.",
+    "workTogether": "Work Together",
+    "coreValues": {
+      "title": "Core Values",
+      "1": {
+        "title": "End-to-End Experience",
+        "description": "We directly execute the entire process from planning to design, development, deployment, and operation, building actually operational systems."
+      },
+      "2": {
+        "title": "Business Understanding",
+        "description": "Not just feature implementation, but creating practical value by considering revenue models and growth strategies together."
+      },
+      "3": {
+        "title": "Technology Diversity",
+        "description": "Providing optimal solutions with diverse technology stacks including Web, Mobile, AI, Blockchain, and Infrastructure."
+      }
+    },
+    "techStack": {
+      "badge": "Tech Stack & Expertise",
+      "title": "Tech Stack & Expertise",
+      "description": "Building stable and scalable systems using the latest tech stacks and proven tools.",
+      "description2": "Selecting optimal technologies suited to each project's characteristics.",
+      "consultation": "Tech Consultation",
+      "categories": {
+        "frontend": {
+          "title": "Frontend Development",
+          "items": [
+            "React.js & Next.js – SSR/SSG/ISR",
+            "React Native",
+            "TypeScript",
+            "Tailwind CSS",
+            "D3.js & Chart.js"
+          ]
+        },
+        "backend": {
+          "title": "Backend & Infrastructure",
+          "items": [
+            "Node.js & Express",
+            "Python & Django",
+            "MySQL & MongoDB",
+            "AWS EC2/S3/Lambda",
+            "Proxmox"
+          ]
+        },
+        "web3": {
+          "title": "Web3 & Blockchain",
+          "items": [
+            "Smart Contract",
+            "Web3.js & Ethers.js",
+            "Crypto Payment (USDT, BTC)",
+            "DeFi Protocol",
+            "Telegram MiniApp"
+          ]
+        },
+        "ai": {
+          "title": "AI & Automation",
+          "items": [
+            "Machine Learning – scikit-learn, TensorFlow",
+            "Pandas, NumPy",
+            "Puppeteer, Selenium",
+            "Traffic Automation",
+            "Scheduling & Batch"
+          ]
+        }
+      },
+      "additional": {
+        "title": "Additional Expertise",
+        "sdk": {
+          "title": "SDK",
+          "items": [
+            "Android/iOS SDK",
+            "JavaScript SDK",
+            "RESTful API"
+          ]
+        },
+        "devops": {
+          "title": "DevOps",
+          "items": [
+            "CI/CD Pipeline",
+            "Docker & Kubernetes",
+            "Monitoring"
+          ]
+        },
+        "payment": {
+          "title": "Payment Systems",
+          "items": [
+            "PG Integration",
+            "Settlement",
+            "Crypto Payment"
+          ]
+        },
+        "security": {
+          "title": "Security",
+          "items": [
+            "Fraud Prevention",
+            "Auth/Authorization",
+            "VPN/Proxy"
+          ]
+        }
+      }
+    }
+  },
+  "introduction": {
+    "hero": {
+      "welcome": "Welcome to SEMICOLON;DEV",
+      "title": "Practical Full-Stack",
+      "titleHighlight": "Development Team",
+      "description": "Beyond simple development, SEMICOLON;DEV is a practical full-stack development team that considers business models, operational structures, and growth strategies.\nTransforming ideas into revenue-generating systems is our strength."
+    },
+    "about": {
+      "badge": "About Us",
+      "title": "Development Team that Understands Business",
+      "paragraph1": "SEMICOLON;DEV goes beyond writing code to create systems that actually work in real business environments.\nWe execute the entire process from planning to design, development, deployment, and operations, considering revenue models and growth strategies together.",
+      "paragraph2": "We possess operational experience particularly in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization infrastructure.\nWe provide solutions proven in practice, not just theory.",
+      "paragraph3": "Utilizing diverse tech stacks including Web, Mobile, AI, Blockchain, and Infrastructure,\nwe design and implement optimal solutions tailored to each project's characteristics.\nSolving complex business requirements with technology is our specialty."
+    },
+    "strengths": {
+      "badge": "Our Strengths",
+      "title": "Proven Capabilities in Practice",
+      "items": [
+        {
+          "title": "End-to-End Development",
+          "description": "We directly execute the entire process from planning, design, development, deployment to operations. Building actually operational systems is possible."
+        },
+        {
+          "title": "Business-Centric Thinking",
+          "description": "Not just feature implementation, but creating practical business value by considering revenue models and growth strategies together."
+        },
+        {
+          "title": "Full-Stack Capabilities",
+          "description": "We possess technical capabilities across all fields including Frontend, Backend, Mobile, AI, Blockchain, and Infrastructure."
+        },
+        {
+          "title": "Rapid Execution",
+          "description": "We implement quickly from prototype to production. Operating efficient development processes with the latest tech stack."
+        },
+        {
+          "title": "Growth-Oriented",
+          "description": "We consider from initial MVP to scalable architecture. Designing systems that can scale with business growth."
+        },
+        {
+          "title": "Practical Experience",
+          "description": "We possess operational experience in various real-world projects including offerwall, AppTech, Web3, tracking systems, AI analysis, and automation."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "All Projects",
+    "description": "Complete list of all projects. Use search and filters to find what you're looking for.",
+    "viewAll": "View All",
+    "categories": {
+      "all": "All",
+      "web & mobile": "Web & Mobile",
+      "ai & ml": "AI & ML",
+      "web3 & blockchain": "Web3 & Blockchain",
+      "devops": "DevOps"
+    },
+    "status": {
+      "all": "All",
+      "live": "Live",
+      "development": "In Development",
+      "archived": "Archived"
+    },
+    "items": {
+      "0": {
+        "title": "QRO",
+        "description": "A reward-based engagement platform that transforms user behavior into incentives. Connecting ads, missions, and data flow to drive meaningful user participation."
+      },
+      "1": {
+        "title": "ADEN",
+        "description": "End-to-End internal system integrating project, publisher, ad, revenue, and member management."
+      },
+      "3": {
+        "title": "KRCryptos - Web3 Ecosystem",
+        "description": "Global Web3 platform integrating 6 services (MiniApp, Gift, Swap, Task, Affiliate, Escrow)"
+      },
+      "2": {
+        "title": "Sitra - AI Assistant Scheduler",
+        "description": "AI-powered calendar and scheduling assistant service"
+      },
+      "5": {
+        "title": "Corporate Website Development",
+        "description": "Full-stack web application integrating member management system (Supabase Auth), instructor introduction pages, course management, and e-commerce features"
+      },
+      "6": {
+        "title": "Tether Pay – USDT POS Payment Solution",
+        "description": "Tether-based QR/wallet payment system with real-time transaction tracking and merchant dashboard"
+      },
+      "4": {
+        "title": "Stock AI – AI Stock Analysis System",
+        "description": "Machine learning-based stock pattern analysis and prediction with real-time data visualization."
+      },
+      "7": {
+        "title": "Offerwall System + SDK Development",
+        "description": "Integrated platform for advertisers, publishers, and users with Android/iOS/JS SDK and automated settlement system"
+      },
+      "8": {
+        "title": "Koreazy – Foreign Tourist Platform",
+        "description": "Travel information, local shop recommendations, multi-language support, and global user flow design"
+      },
+      "10": {
+        "title": "KEAGO",
+        "description": "AppTech mobile app with reward/accumulation/attendance/mission systems"
+      },
+      "9": {
+        "title": "US SAT Mock Test System",
+        "description": "Implementation of Reading/Writing/Math sections"
+      },
+      "11": {
+        "title": "Naver Place Traffic Automation",
+        "description": "Naver Place traffic automation system"
+      },
+      "12": {
+        "title": "Corporate Wholesale Automation System",
+        "description": "Wholesale automation system"
+      },
+      "13": {
+        "title": "Proxmox Virtualization Cluster",
+        "description": "Integrated environment with VM + LXC structure / OpenVPN/Zerotier integration and automation"
+      },
+      "14": {
+        "title": "Crawling & Automation System",
+        "description": "DataInvest/FNBInvesting DB platform with scheduled data collection and analysis"
+      },
+      "15": {
+        "title": "Marketing & Promotion Landing Pages",
+        "description": "SaaS launches, events, IR pages, and dozens of landing pages"
+      },
+      "16": {
+        "title": "Corporate E-commerce Development",
+        "description": "Yout Birthday corporate e-commerce website"
+      },
+      "17": {
+        "title": "CRM/ERP Internal Tools",
+        "description": "Sales and customer management system with Telegram Bot-based automation"
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "nav": {
+    "home": "홈",
+    "projects": "프로젝트",
+    "philosophy": "철학",
+    "blog": "블로그",
+    "notes": "노트"
+  },
+  "hero": {
+    "tagline": "SEMICOLON;DEV — 코드와 호기심이 만나는 곳",
+    "title": "디지털을 빚어냅니다",
+    "roles": {
+      "0": "building interfaces",
+      "1": "exploring systems",
+      "2": "breaking barriers",
+      "3": "forging ideas",
+      "4": "crafting code"
+    },
+    "description": "아이디어를 실제로 동작하는 시스템으로 만듭니다.",
+    "description2": "웹, 앱, 데이터 자동화, AI 분석, Web3, 가상화 클러스터까지 \n직접 설계하고, 개발하고, 운영까지 책임집니다.",
+    "explore": "프로젝트 보기",
+    "introduction": "회사 소개"
+  },
+  "status": {
+    "building": "상태: 개발중",
+    "forging": "제작중",
+    "experiments": "실험 로드됨",
+    "lastSpark": "마지막 작업",
+    "today": "오늘"
+  },
+  "footer": {
+    "connect": "Connect",
+    "buildTogether": "Let's build something ",
+    "together": "together",
+    "description": "새로운 프로젝트를 시작하고 싶으신가요?\nWeb, Mobile, AI, Blockchain 등 다양한 분야의 개발 경험을 바탕으로\n최적의 솔루션을 제안해드립니다.",
+    "sendSignal": "send a signal",
+    "findMe": "Find me elsewhere",
+    "forgedWith": "Forged with",
+    "and": "&",
+    "code": "code",
+    "rights": "All experiments reserved",
+    "strengths": {
+      "title": "우리의 강점",
+      "items": [
+        "End-to-End 개발 경험 (기획부터 운영까지)",
+        "다양한 기술 스택 보유 (Web/App/AI/Blockchain)",
+        "비즈니스 모델 이해 기반 개발",
+        "실전 운영 경험이 풍부한 시스템 구축"
+      ]
+    },
+    "projectCategories": {
+      "title": "주요 프로젝트 분야",
+      "items": [
+        "Web/Mobile",
+        "AI/ML",
+        "Web3/Blockchain",
+        "Offerwall",
+        "Payment",
+        "Automation",
+        "Infrastructure",
+        "SDK"
+      ]
+    }
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "tagline": "Our Philosophy",
+    "description": "비즈니스 모델·운영 구조·성장 전략까지 고려한 실전형 풀스택 개발팀입니다.",
+    "mainTitle": "실전형 풀스택 개발팀",
+    "quote": "단순한 개발을 넘어, 비즈니스 모델·운영 구조·성장 전략까지 고려한 실전형 풀스택 개발팀입니다.",
+    "intro": "특히 오퍼월, AppTech, Web3, 전환/트래킹 시스템, AI 분석, 데이터 자동화, 가상화 분야에서 강한 실전 경험을 보유하고 있습니다.",
+    "workTogether": "함께 일하기",
+    "coreValues": {
+      "title": "핵심 가치",
+      "1": {
+        "title": "End-to-End 경험",
+        "description": "기획부터 설계, 개발, 배포, 운영까지 전 과정을 직접 수행하며 실제 운영 가능한 시스템을 구축합니다."
+      },
+      "2": {
+        "title": "비즈니스 이해",
+        "description": "단순 기능 구현이 아닌, 수익 모델과 성장 전략을 함께 고민하며 실질적인 가치를 창출합니다."
+      },
+      "3": {
+        "title": "기술 다양성",
+        "description": "Web, Mobile, AI, Blockchain, Infrastructure 등 다양한 기술 스택으로 최적의 솔루션을 제공합니다."
+      }
+    },
+    "techStack": {
+      "badge": "Tech Stack & Expertise",
+      "title": "기술 스택과 전문성",
+      "description": "최신 기술 스택과 검증된 도구들을 활용하여 안정적이고 확장 가능한 시스템을 구축합니다.",
+      "description2": "각 프로젝트의 특성에 맞는 최적의 기술을 선택합니다.",
+      "consultation": "기술 상담",
+      "categories": {
+        "frontend": {
+          "title": "Frontend Development",
+          "items": [
+            "React.js & Next.js – SSR/SSG/ISR",
+            "React Native",
+            "TypeScript",
+            "Tailwind CSS",
+            "D3.js & Chart.js"
+          ]
+        },
+        "backend": {
+          "title": "Backend & Infrastructure",
+          "items": [
+            "Node.js & Express",
+            "Python & Django",
+            "MySQL & MongoDB",
+            "AWS EC2/S3/Lambda",
+            "Proxmox"
+          ]
+        },
+        "web3": {
+          "title": "Web3 & Blockchain",
+          "items": [
+            "Smart Contract",
+            "Web3.js & Ethers.js",
+            "Crypto Payment (USDT, BTC)",
+            "DeFi Protocol",
+            "Telegram MiniApp"
+          ]
+        },
+        "ai": {
+          "title": "AI & Automation",
+          "items": [
+            "Machine Learning – scikit-learn, TensorFlow",
+            "Pandas, NumPy",
+            "Puppeteer, Selenium",
+            "Traffic Automation",
+            "Scheduling & Batch"
+          ]
+        }
+      },
+      "additional": {
+        "title": "추가 전문 분야",
+        "sdk": {
+          "title": "SDK",
+          "items": [
+            "Android/iOS SDK",
+            "JavaScript SDK",
+            "RESTful API"
+          ]
+        },
+        "devops": {
+          "title": "DevOps",
+          "items": [
+            "CI/CD Pipeline",
+            "Docker & Kubernetes",
+            "Monitoring"
+          ]
+        },
+        "payment": {
+          "title": "Payment Systems",
+          "items": [
+            "PG Integration",
+            "Settlement",
+            "Crypto Payment"
+          ]
+        },
+        "security": {
+          "title": "Security",
+          "items": [
+            "Fraud Prevention",
+            "Auth/Authorization",
+            "VPN/Proxy"
+          ]
+        }
+      }
+    }
+  },
+  "introduction": {
+    "hero": {
+      "welcome": "Welcome to SEMICOLON;DEV",
+      "title": "실전형 풀스택",
+      "titleHighlight": "개발팀",
+      "description": "SEMICOLON;DEV는 단순한 개발을 넘어, 비즈니스 모델부터 운영 구조, 성장 전략까지 고려하는 실전형 풀스택 개발팀입니다.\n아이디어를 실제 수익을 만드는 시스템으로 전환하는 것이 우리의 강점입니다."
+    },
+    "about": {
+      "badge": "About Us",
+      "title": "비즈니스를 이해하는 개발팀",
+      "paragraph1": "SEMICOLON;DEV는 단순히 코드를 작성하는 것을 넘어, 실제 비즈니스에서 작동하는 시스템을 만듭니다.\n기획부터 설계, 개발, 배포, 운영까지 전 과정을 직접 수행하며, 수익 모델과 성장 전략을 함께 고민합니다.",
+      "paragraph2": "특히 오퍼월(Offerwall), AppTech, Web3, 전환/트래킹 시스템, AI 분석, 데이터 자동화, 가상화 인프라 분야에서\n실제 운영 경험을 보유하고 있습니다. 이론이 아닌 실전에서 검증된 솔루션을 제공합니다.",
+      "paragraph3": "Web, Mobile, AI, Blockchain, Infrastructure 등 다양한 기술 스택을 활용하여\n각 프로젝트의 특성에 맞는 최적의 솔루션을 설계하고 구현합니다.\n복잡한 비즈니스 요구사항을 기술로 풀어내는 것이 우리의 전문 분야입니다."
+    },
+    "strengths": {
+      "badge": "Our Strengths",
+      "title": "실전에서 검증된 역량",
+      "items": [
+        {
+          "title": "End-to-End 개발",
+          "description": "기획, 설계, 개발, 배포, 운영까지 전 과정을 직접 수행합니다. 실제 운영 가능한 시스템 구축이 가능합니다."
+        },
+        {
+          "title": "비즈니스 중심 사고",
+          "description": "단순 기능 구현이 아닌, 수익 모델과 성장 전략을 함께 고민합니다. 실질적인 비즈니스 가치를 창출합니다."
+        },
+        {
+          "title": "풀스택 역량",
+          "description": "Frontend, Backend, Mobile, AI, Blockchain, Infrastructure 등 전 분야에 걸친 기술 역량을 보유하고 있습니다."
+        },
+        {
+          "title": "빠른 실행력",
+          "description": "프로토타입부터 프로덕션까지 빠르게 구현합니다. 최신 기술 스택으로 효율적인 개발 프로세스를 운영합니다."
+        },
+        {
+          "title": "성장 지향",
+          "description": "초기 MVP부터 확장 가능한 아키텍처까지 고려합니다. 비즈니스 성장과 함께 스케일할 수 있는 시스템을 설계합니다."
+        },
+        {
+          "title": "실전 경험",
+          "description": "오퍼월, AppTech, Web3, 트래킹 시스템, AI 분석, 자동화 등 다양한 실전 프로젝트 운영 경험을 보유하고 있습니다."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "All Projects",
+    "description": "프로젝트 전체 목록입니다. 검색과 필터 기능을 사용하여 원하는 프로젝트를 찾아보세요.",
+    "viewAll": "모두 보기",
+    "categories": {
+      "all": "All",
+      "web & mobile": "Web & Mobile",
+      "ai & ml": "AI & ML",
+      "web3 & blockchain": "Web3 & Blockchain",
+      "devops": "DevOps"
+    },
+    "status": {
+      "all": "전체",
+      "live": "운영중",
+      "development": "개발중",
+      "archived": "종료"
+    },
+    "items": {
+      "0": {
+        "title": "QRO - 큐로",
+        "description": "QRO는 사용자 행동을 보상으로 전환하는 리워드 기반 참여 플랫폼입니다. /n광고, 미션, 데이터 흐름을 하나로 연결하여 실질적인 유저 참여를 만들어냅니다."
+      },
+      "1": {
+        "title": "ADEN - 에덴",
+        "description": "프로젝트·매체사·광고·수익·회원 관리 통합 End-to-End 내부 시스템."
+      },
+      "3": {
+        "title": "KRCryptos - Web3 Ecosystem",
+        "description": "6개 서비스 통합 글로벌 Web3 플랫폼 (MiniApp, Gift, Swap, Task, Affiliate, Escrow)"
+      },
+      "2": {
+        "title": "Sitra - AI 비서 일정관리",
+        "description": "AI 비서 일정관리 서비스"
+      },
+      "5": {
+        "title": "기업 웹사이트 제작",
+        "description": "회원 관리 시스템 (Supabase Auth), 강사 소개 페이지, 강좌 관리, 쇼핑몰 기능을 통합한 풀스택 웹 애플리케이트"
+      },
+      "6": {
+        "title": "Tether Pay – USDT POS 결제 솔루션",
+        "description": "테더 기반 QR/지갑 결제 시스템, 실시간 트랜잭션 확인 및 상점 대시보드"
+      },
+      "4": {
+        "title": "Stock AI – AI 주식 분석 시스템",
+        "description": "머신러닝 기반 주가 패턴 분석 및 예측, 실시간 데이터 시각화."
+      },
+      "7": {
+        "title": "오퍼월 시스템 + SDK 개발",
+        "description": "광고주·매체사·유저 통합 플랫폼, Android/iOS/JS SDK, 자동 정산 시스템"
+      },
+      "8": {
+        "title": "Koreazy – 외국인 관광객 플랫폼",
+        "description": "여행 정보, 로컬 상점 추천, 다국어 처리, 글로벌 사용자 흐름 설계"
+      },
+      "10": {
+        "title": "KEAGO - 캐고",
+        "description": "AppTech 모바일 앱, 리워드/적립/출석/미션 시스템"
+      },
+      "9": {
+        "title": "미국 SAT 모의시험 시스템",
+        "description": "Reading/Writing/Math 섹션 구현"
+      },
+      "11": {
+        "title": "네이버 플레이스 트래픽 자동화",
+        "description": "네이버 플레이스 트래픽 자동화 시스템"
+      },
+      "12": {
+        "title": "기업용 통판 자동화 시스템",
+        "description": "통판 자동화 시스템"
+      },
+      "13": {
+        "title": "Proxmox 가상화 클러스터",
+        "description": "VM + LXC 구조 통합 환경 & OpenVPN/Zerotier 연동 및 자동화"
+      },
+      "14": {
+        "title": "크롤링 & 자동화 시스템",
+        "description": "DataInvest/FNBInvesting/iFinance DB 플랫폼, 스케줄링 데이터 수집 및 분석 제공"
+      },
+      "15": {
+        "title": "마케팅 & 프로모션 LP",
+        "description": "SaaS 런칭, 이벤트, IR 페이지, 수십 개의 랜딩페이지 제작"
+      },
+      "16": {
+        "title": "기업 쇼핑몰 제작",
+        "description": "Yout Birthday 기업 쇼핑몰 제작"
+      },
+      "17": {
+        "title": "CRM/ERP 내부 도구",
+        "description": "영업·고객관리 시스템, Telegram Bot 기반 자동화"
+      }
+    }
+  }
+}
