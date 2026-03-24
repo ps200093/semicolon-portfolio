@@ -117,7 +117,7 @@ export function PhilosophyPageContent() {
               </p>
 
               <Link
-                href="#contact"
+                href="#connect"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:gap-3 hover-lift"
               >
                 {t("philosophy.workTogether")}
@@ -176,7 +176,7 @@ export function PhilosophyPageContent() {
               <br />{t("philosophy.techStack.description2")}
             </p>
             <Link
-              href="#contact"
+              href="#connect"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-card/40 glass px-6 py-3 text-sm font-semibold transition-all hover:border-primary/50 hover:bg-card/60 hover-lift"
             >
               {t("philosophy.techStack.consultation")}

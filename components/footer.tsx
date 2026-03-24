@@ -34,11 +34,11 @@ export function Footer() {
 
             <div className="pt-2">
               <a
-                href="mailto:contact@semicolon.dev"
+                href="mailto:contact@semicolon.it.kr"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:gap-3 hover-lift"
               >
                 <Mail className="h-4 w-4" />
-                contact@semicolon.dev
+                contact@semicolon.it.kr
               </a>
             </div>
           </div>
