@@ -1,7 +1,7 @@
 import { PhilosophyPageContent } from "@/components/public/philosophy/philosophy-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir'; 
 
 export const metadata: Metadata = {
   title: "Philosophy",
