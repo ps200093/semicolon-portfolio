@@ -26,8 +26,8 @@ export function ThemeToggle() {
     { value: "dark", icon: Moon, label: "Dark" },
   ];
 
-  // Handle undefined theme - default to "dark" as per layout.tsx defaultTheme
-  const currentTheme = theme ?? "dark";
+  // Handle undefined theme - default to "light" as per layout.tsx defaultTheme
+  const currentTheme = theme ?? "light";
   
   // Determine which icon to show based on resolved theme (what user actually sees)
   let CurrentIcon: typeof Sun | typeof Moon | typeof Monitor;

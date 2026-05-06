@@ -160,7 +160,7 @@ export default function MatrixRainEnhanced() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen bg-black overflow-hidden relative"
+      className="w-full h-screen bg-background dark:bg-black overflow-hidden relative"
       style={{ fontFamily: "'Courier New', monospace" }}
     >
       {drops.map((drop, dropIndex) => {
@@ -201,13 +201,13 @@ export default function MatrixRainEnhanced() {
               return (
                 <div
                   key={charIndex}
-                  className={`text-lg ${isLastChar ? "text-green-300" : "text-green-500"}`}
+                  className={`text-lg ${isLastChar ? "text-primary" : "text-primary/75"}`}
                   style={{
                     opacity: Math.min(1, charOpacity), // Ensure opacity doesn't exceed 1
                     textShadow: isLastChar
-                      ? `0 0 ${8 * drop.glowIntensity}px #00FF41`
+                      ? `0 0 ${8 * drop.glowIntensity}px var(--primary)`
                       : isNearLastChar
-                        ? `0 0 ${3 * drop.glowIntensity}px #008F11`
+                        ? `0 0 ${3 * drop.glowIntensity}px var(--primary)`
                         : "none",
                   }}
                 >

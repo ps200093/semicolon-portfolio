@@ -12,12 +12,12 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'https://github.com/dev-semicolon',
+      url: 'https://semicolon.it.kr/team',
     },
     publisher: {
-      '@type': 'Person',
+      '@type': 'Organization',
       name: 'SEMICOLON;DEV',
-      url: 'https://eindev.ir',
+      url: 'https://semicolon.it.kr',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -34,40 +34,29 @@ export function generateWebsiteStructuredData(url: string) {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'SEMICOLON;DEV',
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by SEMICOLON;DEV.",
+    description: "AI-powered relationship commerce for birthdays, anniversaries, VIP benefits, gift recommendations, and concierge operations.",
     url: url,
     author: {
-      '@type': 'Person',
+      '@type': 'Organization',
       name: 'SEMICOLON;DEV',
-      url: 'https://github.com/dev-semicolon',
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${url}/blog?search={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
+      url,
     },
   }
 }
 
-export function generatePersonStructuredData() {
+export function generateOrganizationStructuredData(url = 'https://semicolon.it.kr') {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Person',
+    '@type': 'Organization',
     name: 'SEMICOLON;DEV',
-    url: 'https://eindev.ir',
-    image: 'https://eindev.ir/developer-portrait.png',
-    sameAs: [
-      'https://github.com/dev-semicolon',
-      'https://twitter.com/dev-semicolon',
-      'https://linkedin.com/in/dev-semicolon',
-    ],
-    jobTitle: 'Software Engineer',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'SEMICOLON;DEV',
+    description: 'Builder of AI-powered relationship commerce and full-stack digital platforms.',
+    url,
+    logo: `${url}/semicolonDev-logo.png`,
+    image: `${url}/og-image.png`,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'contact@semicolon.it.kr',
+      contactType: 'customer support',
     },
   }
 }

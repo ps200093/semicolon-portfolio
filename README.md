@@ -26,7 +26,7 @@ SEMICOLON;DEV is a lightweight, opinionated editor UI and playground intended fo
 Prerequisites
 
 - Node.js 18 or newer
-- pnpm (recommended) — install from <https://pnpm.io/>
+- pnpm (recommended) - install from <https://pnpm.io/>
 
 Quick start
 
@@ -40,10 +40,10 @@ pnpm dev
 
 Available scripts
 
-- `pnpm dev` — runs `next dev` (development server)
-- `pnpm build` — runs `next build` (production build)
-- `pnpm start` — runs `next start` (serve built app)
-- `pnpm lint` — run `eslint .`
+- `pnpm dev` - runs `next dev` (development server)
+- `pnpm build` - runs `next build` (production build)
+- `pnpm start` - runs `next start` (serve built app)
+- `pnpm lint` - run `eslint .`
 
 Building for production
 
@@ -54,11 +54,11 @@ pnpm start
 
 Project layout (high level)
 
-- `app/` — Next.js App Router pages and layout
-- `components/` — UI components and small feature pieces
-- `lib/` — utilities and helpers
-- `public/` — static assets
-- `styles/` — global styles and Tailwind CSS entry
+- `app/` - Next.js App Router pages and layout
+- `components/` - UI components and small feature pieces
+- `lib/` - utilities and helpers
+- `public/` - static assets
+- `styles/` - global styles and Tailwind CSS entry
 
 Where to get help
 
@@ -67,7 +67,7 @@ Where to get help
 
 Who maintains this project
 
-- Maintainer: Ehsan Ghaffar — listed as the package author.
+- Maintainer: Ehsan Ghaffar - listed as the package author.
 
 Contributing
 
@@ -79,5 +79,3 @@ Notes and next steps
 - If you want, I can add a basic `CONTRIBUTING.md` and a PR template next.
 
 ---
-
-If anything in this README should be adjusted (more examples, extra badges, or internal docs links), tell me which parts you want expanded and I'll update it.

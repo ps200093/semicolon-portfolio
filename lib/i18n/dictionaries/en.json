@@ -1,13 +1,16 @@
 {
   "nav": {
     "home": "Home",
+    "product": "Product",
     "projects": "Projects",
+    "introduction": "About",
+    "team": "Team",
     "philosophy": "Philosophy",
     "blog": "Blog",
     "notes": "Notes"
   },
   "hero": {
-    "tagline": "SEMICOLON;DEV — Where Code Meets Curiosity",
+    "tagline": "SEMICOLON;DEV - Where Code Meets Curiosity",
     "title": "Forging digital",
     "roles": {
       "0": "building interfaces",
@@ -17,9 +20,9 @@
       "4": "crafting code"
     },
     "description": "Turning ideas into working systems.",
-    "description2": "From web, apps, data automation, AI analysis, Web3, to virtualized clusters — \nWe design, develop, and operate everything.",
+    "description2": "From web, apps, data automation, AI analysis, Web3, to virtualized clusters - \nWe design, develop, and operate everything.",
     "explore": "explore projects",
-    "introduction": "introduction"
+    "introduction": "about us"
   },
   "status": {
     "building": "status: building",
@@ -38,9 +41,9 @@
     "forgedWith": "Forged with",
     "and": "&",
     "code": "code",
-    "rights": "All experiments reserved",
+    "rights": "All rights reserved",
     "strengths": {
-      "title": "Our Strengths",
+      "title": "SEMICOLON's Strengths",
       "items": [
         "End-to-End development experience (from planning to operations)",
         "Diverse tech stack expertise (Web/App/AI/Blockchain)",
@@ -68,21 +71,21 @@
     "description": "A practical full-stack development team that considers business models, operational structures, and growth strategies beyond simple development.",
     "mainTitle": "Practical Full-Stack Development Team",
     "quote": "Beyond simple development, we are a practical full-stack development team that considers business models, operational structures, and growth strategies.",
-    "intro": "We possess strong practical experience particularly in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization.",
+    "intro": "We have strong hands-on experience in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization.",
     "workTogether": "Work Together",
     "coreValues": {
       "title": "Core Values",
       "1": {
         "title": "End-to-End Experience",
-        "description": "We directly execute the entire process from planning to design, development, deployment, and operation, building actually operational systems."
+        "description": "We handle the full process from planning and design to development, deployment, and operations, building systems that can run in production."
       },
       "2": {
         "title": "Business Understanding",
-        "description": "Not just feature implementation, but creating practical value by considering revenue models and growth strategies together."
+        "description": "We go beyond feature implementation to create practical value by considering revenue models and growth strategies together."
       },
       "3": {
         "title": "Technology Diversity",
-        "description": "Providing optimal solutions with diverse technology stacks including Web, Mobile, AI, Blockchain, and Infrastructure."
+        "description": "We provide optimal solutions with diverse technology stacks across Web, Mobile, AI, Blockchain, and Infrastructure."
       }
     },
     "techStack": {
@@ -180,8 +183,8 @@
     "about": {
       "badge": "About Us",
       "title": "Development Team that Understands Business",
-      "paragraph1": "SEMICOLON;DEV goes beyond writing code to create systems that actually work in real business environments.\nWe execute the entire process from planning to design, development, deployment, and operations, considering revenue models and growth strategies together.",
-      "paragraph2": "We possess operational experience particularly in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization infrastructure.\nWe provide solutions proven in practice, not just theory.",
+      "paragraph1": "SEMICOLON;DEV goes beyond writing code to create systems that work in real business environments.\nWe handle the full process from planning and design to development, deployment, and operations while considering revenue models and growth strategies.",
+      "paragraph2": "We have hands-on operating experience in offerwall, AppTech, Web3, conversion/tracking systems, AI analysis, data automation, and virtualization infrastructure.\nWe provide solutions proven in practice, not just theory.",
       "paragraph3": "Utilizing diverse tech stacks including Web, Mobile, AI, Blockchain, and Infrastructure,\nwe design and implement optimal solutions tailored to each project's characteristics.\nSolving complex business requirements with technology is our specialty."
     },
     "strengths": {
@@ -190,19 +193,19 @@
       "items": [
         {
           "title": "End-to-End Development",
-          "description": "We directly execute the entire process from planning, design, development, deployment to operations. Building actually operational systems is possible."
+          "description": "We handle the full process from planning and design to development, deployment, and operations, building systems that can run in production."
         },
         {
           "title": "Business-Centric Thinking",
-          "description": "Not just feature implementation, but creating practical business value by considering revenue models and growth strategies together."
+          "description": "We go beyond feature implementation to create practical business value by considering revenue models and growth strategies together."
         },
         {
           "title": "Full-Stack Capabilities",
-          "description": "We possess technical capabilities across all fields including Frontend, Backend, Mobile, AI, Blockchain, and Infrastructure."
+          "description": "We cover the full technical stack across Frontend, Backend, Mobile, AI, Blockchain, and Infrastructure."
         },
         {
           "title": "Rapid Execution",
-          "description": "We implement quickly from prototype to production. Operating efficient development processes with the latest tech stack."
+          "description": "We move quickly from prototype to production and use modern tech stacks to keep development efficient."
         },
         {
           "title": "Growth-Oriented",
@@ -210,9 +213,28 @@
         },
         {
           "title": "Practical Experience",
-          "description": "We possess operational experience in various real-world projects including offerwall, AppTech, Web3, tracking systems, AI analysis, and automation."
+          "description": "We have hands-on operating experience across real-world projects including offerwall, AppTech, Web3, tracking systems, AI analysis, and automation."
         }
       ]
+    }
+  },
+  "workbench": {
+    "tagline": "Active Workbench",
+    "title": "What we are building now",
+    "description": "A quick look at experiments and internal systems currently moving through the workshop."
+  },
+  "team": {
+    "hero": {
+      "badge": "Founder & Team",
+      "title": "A team shaping product and business together",
+      "description": "SEMICOLON;DEV brings product planning, full-stack engineering, partner operations, and commerce structure into one practical build process."
+    },
+    "members": {
+      "title": "Core Team",
+      "description": "We move quickly as a small team and work with partners to shape the product architecture and operating flows needed for market entry.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
     }
   },
   "projects": {
@@ -298,8 +320,8 @@
         "description": "SaaS launches, events, IR pages, and dozens of landing pages"
       },
       "16": {
-        "title": "Corporate E-commerce Development",
-        "description": "Your Birthday corporate e-commerce website"
+        "title": "Corporate Commerce Website",
+        "description": "A business commerce website organizing brand content, product presentation, and customer purchase flows"
       },
       "17": {
         "title": "CRM/ERP Internal Tools",

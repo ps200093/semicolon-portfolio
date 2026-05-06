@@ -1,126 +1,113 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowRight, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/lib/i18n/context"
+import enDictionary from "@/lib/i18n/dictionaries/en.json"
+import koDictionary from "@/lib/i18n/dictionaries/ko.json"
+
+const fallbackPhilosophyCopy = {
+  en: enDictionary.philosophy,
+  ko: koDictionary.philosophy,
+}
 
 export function PhilosophyPageContent() {
-  const [isVisible, setIsVisible] = useState(false)
-  const { t } = useLanguage()
+  const { language, getTranslations } = useLanguage()
+  const translations = getTranslations()
+  const copy = (translations?.philosophy || fallbackPhilosophyCopy[language]) as typeof koDictionary.philosophy
 
   const coreValues = [
     {
       number: "01",
-      title: t("philosophy.coreValues.1.title"),
-      description: t("philosophy.coreValues.1.description"),
+      title: copy.coreValues["1"].title,
+      description: copy.coreValues["1"].description,
     },
     {
       number: "02",
-      title: t("philosophy.coreValues.2.title"),
-      description: t("philosophy.coreValues.2.description"),
+      title: copy.coreValues["2"].title,
+      description: copy.coreValues["2"].description,
     },
     {
       number: "03",
-      title: t("philosophy.coreValues.3.title"),
-      description: t("philosophy.coreValues.3.description"),
+      title: copy.coreValues["3"].title,
+      description: copy.coreValues["3"].description,
     },
   ]
 
   const techStacks = [
     {
       id: 1,
-      title: t("philosophy.techStack.categories.frontend.title"),
+      title: copy.techStack.categories.frontend.title,
       video: "/images/tech-frontend.mp4",
-      items: Array.isArray(t("philosophy.techStack.categories.frontend.items"))
-        ? t("philosophy.techStack.categories.frontend.items") as unknown as string[]
-        : [],
+      items: copy.techStack.categories.frontend.items,
     },
     {
       id: 2,
-      title: t("philosophy.techStack.categories.backend.title"),
+      title: copy.techStack.categories.backend.title,
       video: "/images/tech-backend.mp4",
-      items: Array.isArray(t("philosophy.techStack.categories.backend.items"))
-        ? t("philosophy.techStack.categories.backend.items") as unknown as string[]
-        : [],
+      items: copy.techStack.categories.backend.items,
     },
     {
       id: 3,
-      title: t("philosophy.techStack.categories.web3.title"),
+      title: copy.techStack.categories.web3.title,
       video: "/images/tech-web3.mp4",
-      items: Array.isArray(t("philosophy.techStack.categories.web3.items"))
-        ? t("philosophy.techStack.categories.web3.items") as unknown as string[]
-        : [],
+      items: copy.techStack.categories.web3.items,
     },
     {
       id: 4,
-      title: t("philosophy.techStack.categories.ai.title"),
+      title: copy.techStack.categories.ai.title,
       video: "/images/tech-ai.mp4",
-      items: Array.isArray(t("philosophy.techStack.categories.ai.items"))
-        ? t("philosophy.techStack.categories.ai.items") as unknown as string[]
-        : [],
+      items: copy.techStack.categories.ai.items,
     },
   ]
 
   const additionalExpertise = [
     {
-      title: t("philosophy.techStack.additional.sdk.title"),
-      items: Array.isArray(t("philosophy.techStack.additional.sdk.items")) 
-        ? t("philosophy.techStack.additional.sdk.items") as unknown as string[]
-        : [],
+      title: copy.techStack.additional.sdk.title,
+      items: copy.techStack.additional.sdk.items,
     },
     {
-      title: t("philosophy.techStack.additional.devops.title"),
-      items: Array.isArray(t("philosophy.techStack.additional.devops.items"))
-        ? t("philosophy.techStack.additional.devops.items") as unknown as string[]
-        : [],
+      title: copy.techStack.additional.devops.title,
+      items: copy.techStack.additional.devops.items,
     },
     {
-      title: t("philosophy.techStack.additional.payment.title"),
-      items: Array.isArray(t("philosophy.techStack.additional.payment.items"))
-        ? t("philosophy.techStack.additional.payment.items") as unknown as string[]
-        : [],
+      title: copy.techStack.additional.payment.title,
+      items: copy.techStack.additional.payment.items,
     },
     {
-      title: t("philosophy.techStack.additional.security.title"),
-      items: Array.isArray(t("philosophy.techStack.additional.security.items"))
-        ? t("philosophy.techStack.additional.security.items") as unknown as string[]
-        : [],
+      title: copy.techStack.additional.security.title,
+      items: copy.techStack.additional.security.items,
     },
   ]
 
-  useEffect(() => {
-    setIsVisible(true)
-  }, [])
-
   return (
-    <section className="px-4 sm:px-6 py-12 sm:py-20">
+    <section className="px-4 sm:px-6 pt-36 sm:pt-40 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl space-y-24 sm:space-y-32">
         {/* Philosophy Section */}
-        <div className={cn("opacity-0", isVisible && "animate-fade-in-up")}>
+        <div className="animate-fade-in-up">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <p className="font-mono text-xs uppercase tracking-[0.35em] text-primary">{t("philosophy.tagline")}</p>
+                <p className="font-mono text-xs uppercase tracking-[0.35em] text-primary">{copy.tagline}</p>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                  {t("philosophy.mainTitle")}
+                  {copy.mainTitle}
                 </h1>
               </div>
 
               <blockquote className="relative border-l-2 border-primary pl-6 text-xl sm:text-2xl font-medium leading-relaxed text-foreground/90">
-                "{t("philosophy.quote")}"
+                "{copy.quote}"
               </blockquote>
 
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                {t("philosophy.intro")}
+                {copy.intro}
               </p>
 
               <Link
                 href="#connect"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:gap-3 hover-lift"
               >
-                {t("philosophy.workTogether")}
+                {copy.workTogether}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -146,15 +133,17 @@ export function PhilosophyPageContent() {
               <div
                 key={value.number}
                 className={cn(
-                  "group relative rounded-2xl border border-border bg-card/40 glass p-8 transition-all hover:border-primary/50 hover-lift opacity-0",
-                  isVisible && "animate-fade-in-up",
+                  "group rounded-lg border border-border bg-card/45 p-6 shadow-sm shadow-primary/5 glass transition-all hover:border-primary/45 hover:bg-card/65 hover-lift animate-fade-in-up sm:p-7",
                 )}
                 style={{ animationDelay: `${index * 100 + 200}ms` }}
               >
-                <div className="absolute -top-4 -left-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center backdrop-blur-sm border border-primary/20">
-                  <span className="font-mono text-sm font-bold text-primary">{value.number}</span>
+                <div className="mb-6 flex items-center gap-3">
+                  <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+                    Principle {value.number}
+                  </span>
+                  <span className="h-px flex-1 bg-border/70 transition-colors group-hover:bg-primary/30" />
                 </div>
-                <div className="space-y-3 mt-4">
+                <div className="space-y-3">
                   <h3 className="text-xl font-bold tracking-tight">{value.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
                 </div>
@@ -164,22 +153,22 @@ export function PhilosophyPageContent() {
         </div>
 
         {/* Tech Stack Section */}
-        <div className={cn("opacity-0", isVisible && "animate-fade-in-up stagger-4")}>
+        <div className="animate-fade-in-up stagger-4">
           <div className="text-center space-y-6 mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
               <Sparkles className="h-4 w-4 text-primary" />
-              <span className="font-mono text-xs uppercase tracking-wider text-primary">{t("philosophy.techStack.badge")}</span>
+              <span className="font-mono text-xs uppercase tracking-wider text-primary">{copy.techStack.badge}</span>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">{t("philosophy.techStack.title")}</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">{copy.techStack.title}</h2>
             <p className="mx-auto max-w-3xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-              {t("philosophy.techStack.description")}
-              <br />{t("philosophy.techStack.description2")}
+              {copy.techStack.description}
+              <br />{copy.techStack.description2}
             </p>
             <Link
               href="#connect"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-card/40 glass px-6 py-3 text-sm font-semibold transition-all hover:border-primary/50 hover:bg-card/60 hover-lift"
             >
-              {t("philosophy.techStack.consultation")}
+              {copy.techStack.consultation}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -190,23 +179,22 @@ export function PhilosophyPageContent() {
               <div
                 key={tech.id}
                 className={cn(
-                  "group relative rounded-2xl border border-border bg-card/40 glass overflow-hidden transition-all hover:border-primary/50 hover-lift opacity-0",
-                  isVisible && "animate-scale-in",
+                  "group relative rounded-2xl border border-border bg-card/40 glass overflow-hidden transition-all hover:border-primary/50 hover-lift animate-scale-in",
                 )}
                 style={{ animationDelay: `${index * 100 + 400}ms` }}
               >
-                <div className="relative aspect-video overflow-hidden bg-secondary/20">
+                <div className="relative aspect-video overflow-hidden bg-foreground/10">
                   <video
                     autoPlay
                     loop
                     muted
                     playsInline
                     preload="auto"
-                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                    className="h-full w-full object-cover opacity-95 brightness-[0.72] contrast-[1.08] saturate-[0.9] transition-all duration-300 group-hover:scale-105 group-hover:brightness-[0.82]"
                   >
                     <source src={tech.video} type="video/mp4" />
                   </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80 transition-opacity group-hover:opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent opacity-85 transition-opacity group-hover:opacity-70" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-lg font-bold tracking-tight text-white drop-shadow-lg transition-transform group-hover:translate-y-[-2px]">
                       {tech.title}
@@ -230,14 +218,13 @@ export function PhilosophyPageContent() {
 
           {/* Additional Expertise */}
           <div className="mt-12 sm:mt-16">
-            <h3 className="text-2xl font-bold tracking-tight mb-8 text-center">{t("philosophy.techStack.additional.title")}</h3>
+            <h3 className="text-2xl font-bold tracking-tight mb-8 text-center">{copy.techStack.additional.title}</h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {additionalExpertise.map((expertise, index) => (
                 <div
                   key={expertise.title}
                   className={cn(
-                    "rounded-xl border border-border bg-card/30 glass p-6 space-y-4 transition-all hover:border-primary/30 hover:bg-card/50 opacity-0",
-                    isVisible && "animate-fade-in-up",
+                    "rounded-xl border border-border bg-card/30 glass p-6 space-y-4 transition-all hover:border-primary/30 hover:bg-card/50 animate-fade-in-up",
                   )}
                   style={{ animationDelay: `${index * 80 + 600}ms` }}
                 >

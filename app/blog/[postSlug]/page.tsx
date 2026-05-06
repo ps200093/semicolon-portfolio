@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { blogPosts, getPostBySlug } from "@/lib/blog-data";
 import { BlogPostContent } from "@/components/public/blog/blog-post-content";
-import { Footer } from "@/components/footer";
 import { generateBlogPostStructuredData } from "@/lib/structured-data";
 import type { Metadata } from "next";
 
@@ -25,7 +24,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://semicolon.it.kr';
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const ogImageUrl = `${baseUrl}/og-images/${post.slug}.png`;
 
@@ -56,10 +55,13 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: post.title,
       description: post.excerpt,
       images: [ogImageUrl],
-      creator: "@ehsanghaffar",
     },
     alternates: {
       canonical: postUrl,
+    },
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }
@@ -72,7 +74,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://semicolon.it.kr';
   const structuredData = generateBlogPostStructuredData(post, baseUrl);
 
   return (

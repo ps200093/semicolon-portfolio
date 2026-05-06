@@ -1,13 +1,16 @@
 {
   "nav": {
-    "home": "홈",
-    "projects": "프로젝트",
-    "philosophy": "철학",
-    "blog": "블로그",
-    "notes": "노트"
+    "home": "Home",
+    "product": "Product",
+    "projects": "Projects",
+    "introduction": "About",
+    "team": "Team",
+    "philosophy": "Philosophy",
+    "blog": "Blog",
+    "notes": "Notes"
   },
   "hero": {
-    "tagline": "SEMICOLON;DEV — 코드와 호기심이 만나는 곳",
+    "tagline": "SEMICOLON;DEV - 코드와 호기심이 만나는 곳",
     "title": "디지털을 빚어냅니다",
     "roles": {
       "0": "building interfaces",
@@ -19,10 +22,10 @@
     "description": "아이디어를 실제로 동작하는 시스템으로 만듭니다.",
     "description2": "웹, 앱, 데이터 자동화, AI 분석, Web3, 가상화 클러스터까지 \n직접 설계하고, 개발하고, 운영까지 책임집니다.",
     "explore": "프로젝트 보기",
-    "introduction": "회사 소개"
+    "introduction": "About Us"
   },
   "status": {
-    "building": "상태: 개발중",
+    "building": "status: building",
     "forging": "제작중",
     "experiments": "실험 로드됨",
     "lastSpark": "마지막 작업",
@@ -38,9 +41,9 @@
     "forgedWith": "Forged with",
     "and": "&",
     "code": "code",
-    "rights": "All experiments reserved",
+    "rights": "All rights reserved",
     "strengths": {
-      "title": "우리의 강점",
+      "title": "세미콜론의 강점",
       "items": [
         "End-to-End 개발 경험 (기획부터 운영까지)",
         "다양한 기술 스택 보유 (Web/App/AI/Blockchain)",
@@ -215,6 +218,25 @@
       ]
     }
   },
+  "workbench": {
+    "tagline": "진행 중인 워크벤치",
+    "title": "지금 만들고 있는 것들",
+    "description": "현재 실험 중이거나 내부에서 개발 중인 시스템을 간단히 보여주는 영역입니다."
+  },
+  "team": {
+    "hero": {
+      "badge": "Founder & Team",
+      "title": "제품과 사업을 함께 설계하는 팀",
+      "description": "SEMICOLON;DEV는 아이디어를 실제 서비스로 만들기 위해 제품 기획, 풀스택 개발, 파트너 운영, 커머스 구조를 함께 다룹니다."
+    },
+    "members": {
+      "title": "Core Team",
+      "description": "작은 팀으로 빠르게 실험하고, 필요한 파트너와 함께 시장 진입에 필요한 제품 구조와 운영 흐름을 설계합니다.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
+    }
+  },
   "projects": {
     "title": "All Projects",
     "description": "프로젝트 전체 목록입니다. 검색과 필터 기능을 사용하여 원하는 프로젝트를 찾아보세요.",
@@ -235,7 +257,7 @@
     "items": {
       "0": {
         "title": "QRO - 큐로",
-        "description": "QRO는 사용자 행동을 보상으로 전환하는 리워드 기반 참여 플랫폼입니다. /n광고, 미션, 데이터 흐름을 하나로 연결하여 실질적인 유저 참여를 만들어냅니다."
+        "description": "QRO는 사용자 행동을 보상으로 전환하는 리워드 기반 참여 플랫폼입니다.\n광고, 미션, 데이터 흐름을 하나로 연결하여 실질적인 유저 참여를 만들어냅니다."
       },
       "1": {
         "title": "ADEN - 에덴",
@@ -251,7 +273,7 @@
       },
       "5": {
         "title": "기업 웹사이트 제작",
-        "description": "회원 관리 시스템 (Supabase Auth), 강사 소개 페이지, 강좌 관리, 쇼핑몰 기능을 통합한 풀스택 웹 애플리케이트"
+        "description": "회원 관리 시스템(Supabase Auth), 강사 소개 페이지, 강좌 관리, 쇼핑몰 기능을 통합한 풀스택 웹 애플리케이션"
       },
       "6": {
         "title": "Tether Pay – USDT POS 결제 솔루션",
@@ -298,8 +320,8 @@
         "description": "SaaS 런칭, 이벤트, IR 페이지, 수십 개의 랜딩페이지 제작"
       },
       "16": {
-        "title": "기업 쇼핑몰 제작",
-        "description": "Your Birthday 기업 쇼핑몰 제작"
+        "title": "기업 커머스 웹사이트 제작",
+        "description": "브랜드 소개, 상품 구성, 고객 구매 흐름을 정리한 기업형 커머스 웹사이트 구축"
       },
       "17": {
         "title": "CRM/ERP 내부 도구",

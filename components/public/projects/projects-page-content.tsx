@@ -77,7 +77,7 @@ export function ProjectsPageContent() {
   }
 
   return (
-    <section ref={sectionRef} className="px-4 sm:px-6 py-12 sm:py-20">
+    <section ref={sectionRef} className="px-4 sm:px-6 pt-36 sm:pt-40 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl">
         {/* Hero */}
         <div className={cn("mb-12 sm:mb-16 space-y-4 opacity-0", isVisible && "animate-fade-in-up")}>
@@ -274,7 +274,7 @@ export function ProjectsPageContent() {
                   "highlight" in project && project.highlight ? "line-clamp-3" : "line-clamp-2",
                 )}
                 dangerouslySetInnerHTML={{
-                  __html: project.description.replace(/\/n/g, '<br />')
+                  __html: project.description.replace(/(?:\/n|\n)/g, '<br />')
                 }}
               />
 

@@ -1,16 +1,13 @@
-import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
+import { ProductPlatformSection } from "@/components/product-platform-section"
 import { ProjectsGrid } from "@/components/projects-grid"
-import { LabNotes } from "@/components/lab-notes"
 import { Workbench } from "@/components/workbench"
-import { Footer } from "@/components/footer"
-import { CursorGlow } from "@/components/cursor-glow"
-import { generateWebsiteStructuredData, generatePersonStructuredData } from "@/lib/structured-data"
+import { generateWebsiteStructuredData, generateOrganizationStructuredData } from "@/lib/structured-data"
 
 export default function Home() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://semicolon.it.kr'
   const websiteStructuredData = generateWebsiteStructuredData(baseUrl)
-  const personStructuredData = generatePersonStructuredData()
+  const organizationStructuredData = generateOrganizationStructuredData(baseUrl)
 
   return (
     <>
@@ -20,19 +17,12 @@ export default function Home() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationStructuredData) }}
       />
-      <main className="relative min-h-screen overflow-hidden scanlines">
-        <CursorGlow />
-        <div className="relative z-10">
-          <Header />
-          <HeroSection />
-          <ProjectsGrid displayProjectIds={[0, 1, 3, 2, 5, 6, 4, 7]} />
-          {/* <LabNotes /> */}
-          <Workbench />
-          <Footer />
-        </div>
-      </main>
+      <HeroSection />
+      <ProductPlatformSection />
+      <ProjectsGrid displayProjectIds={[0, 1, 3, 2, 5, 6, 4, 7]} />
+      <Workbench />
     </>
   )
 }

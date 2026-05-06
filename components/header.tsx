@@ -1,44 +1,55 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Github, Twitter, Globe } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { ThemeChanger } from "./theme-changer"
 import { LanguageToggle } from "./language-toggle"
+import { useLanguage } from "@/lib/i18n/context"
 import Link from "next/link"
-import Image from "next/image"
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
+  { labelKey: "nav.introduction", fallback: "About", href: "/about" },
+  { labelKey: "nav.product", fallback: "Product", href: "/product" },
+  { labelKey: "nav.projects", fallback: "Projects", href: "/projects" },
+  { labelKey: "nav.team", fallback: "Team", href: "/team" },
   // { label: "Notes", href: "/notes" },
-  { label: "Philosophy", href: "/philosophy" },
+  { labelKey: "nav.philosophy", fallback: "Philosophy", href: "/philosophy" },
   // { label: "Blog", href: "/blog" },
-]
-
-const socialLinks = [
-  { label: "GitHub", href: "https://github.com/dev-semicolon", icon: Github },
-  { label: "Twitter", href: "https://twitter.com/", icon: Twitter },
-  { label: "Website", href: "https://세미콜론.com", icon: Globe },
 ]
 
 export function Header() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const isScrolledRef = useRef(false)
   const pathname = usePathname()
+  const { t } = useLanguage()
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/"
     return pathname.startsWith(href)
   }
 
+  const getNavLabel = (item: (typeof navItems)[number]) => {
+    const label = t(item.labelKey)
+    return label === item.labelKey ? item.fallback : label
+  }
+  const statusLabel = t("status.building")
+  const displayStatus = statusLabel === "status.building" ? "status: building" : statusLabel
+
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      const nextIsScrolled = window.scrollY > 20
+
+      if (isScrolledRef.current !== nextIsScrolled) {
+        isScrolledRef.current = nextIsScrolled
+        setIsScrolled(nextIsScrolled)
+      }
     }
+
+    handleScroll()
     window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -67,29 +78,23 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isScrolled ? "border-b border-border/50 bg-background/80 backdrop-blur-xl shadow-sm" : "bg-transparent",
+        isScrolled ? "border-b border-border/50 bg-background/85 backdrop-blur-md shadow-sm" : "bg-transparent",
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="group flex items-center">
-            <div className="relative flex items-center transition-all duration-400 group-hover:scale-105">
-              <Image
-                src="/semicolonDev-logo.png"
-                alt="SEMICOLON; Logo"
-                width={160}
-                height={48}
-                className="h-12 w-auto"
-                priority
-              />
-            </div>
+        <nav className="flex items-center justify-between gap-4">
+          <Link href="/" className="group flex shrink-0 items-center" aria-label="Go to home">
+            <span
+              className="brand-logo-mask block h-12 w-[172px] shrink-0 bg-primary transition-all duration-300 group-hover:bg-foreground"
+              aria-hidden="true"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-1 lg:flex">
             {navItems.map((item, index) => (
               <Link
-                key={item.label}
+                key={item.href}
                 href={item.href}
                 className={cn(
                   "relative px-4 py-2.5 font-mono text-xs uppercase tracking-widest transition-all duration-300 rounded-lg",
@@ -119,7 +124,7 @@ export function Header() {
                     (hoveredIndex === index || isActive(item.href)) && "translate-x-2",
                   )}
                 >
-                  {item.label}
+                  {getNavLabel(item)}
                 </span>
                 <span
                   className={cn(
@@ -137,59 +142,47 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden items-center gap-1 sm:flex">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                  className="group relative flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-all duration-300 hover:text-primary hover:bg-primary/10"
-                >
-                  <link.icon className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                  <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-card border border-border px-2.5 py-1 font-mono text-[10px] text-muted-foreground opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:-bottom-9 pointer-events-none shadow-lg">
-                    {link.label}
-                  </span>
-                </a>
-              ))}
-            </div>
-
-            <div className="hidden h-5 w-px bg-border sm:block" />
-
             <div className="hidden items-center gap-2.5 font-mono text-xs text-muted-foreground sm:flex px-3 py-1.5 rounded-full bg-secondary/50 border border-border/50">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              <span>status: building</span>
+              <span>{displayStatus}</span>
             </div>
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/50 md:hidden transition-colors hover:bg-secondary"
+              className="group flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/60 text-primary transition-colors hover:border-primary/35 hover:bg-primary/10 lg:hidden"
               aria-label="Toggle menu"
             >
-              <div className="flex flex-col gap-1.5 w-5">
-                <span
-                  className={cn(
-                    "h-0.5 bg-foreground transition-all duration-300 origin-center",
-                    isMobileMenuOpen ? "w-5 translate-y-2 rotate-45" : "w-5",
-                  )}
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 32 32"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d={isMobileMenuOpen ? "M8 8L24 24" : "M6 8H26"}
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  className="transition-all duration-300"
                 />
-                <span
-                  className={cn(
-                    "h-0.5 w-3.5 bg-foreground transition-all duration-300",
-                    isMobileMenuOpen && "opacity-0 translate-x-2",
-                  )}
+                <path
+                  d="M6 16H26"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  className={cn("transition-opacity duration-300 ease-out", isMobileMenuOpen && "opacity-0")}
                 />
-                <span
-                  className={cn(
-                    "h-0.5 bg-foreground transition-all duration-300 origin-center",
-                    isMobileMenuOpen ? "w-5 -translate-y-2 -rotate-45" : "w-5",
-                  )}
+                <path
+                  d={isMobileMenuOpen ? "M24 8L8 24" : "M6 24H26"}
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  className="transition-all duration-300"
                 />
-              </div>
+              </svg>
             </button>
           </div>
         </nav>
@@ -197,37 +190,25 @@ export function Header() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "transition-all duration-400 md:hidden bg-background",
+            "transition-all duration-400 lg:hidden bg-background",
             isMobileMenuOpen ? "max-h-[600px] opacity-100 pt-4 pointer-events-auto" : "max-h-0 opacity-0 pointer-events-none overflow-hidden",
           )}
         >
           <div className="flex flex-col gap-1 border-t border-border/50 pt-4">
             {navItems.map((item, index) => (
               <Link
-                key={item.label}
+                key={item.href}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center gap-3 rounded-lg px-4 py-3.5 font-mono text-sm uppercase tracking-widest text-muted-foreground transition-all duration-200 active:bg-secondary hover:text-foreground hover:bg-secondary/50"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <span className="text-primary">{">"}</span>
-                {item.label}
+                {getNavLabel(item)}
               </Link>
             ))}
 
             <div className="mt-4 flex items-center gap-3 border-t border-border/50 pt-4 px-4">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                  className="flex h-12 w-12 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-colors active:bg-secondary hover:border-primary/50 hover:text-primary hover:bg-primary/10"
-                >
-                  <link.icon className="h-5 w-5" />
-                </a>
-              ))}
               <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-border/50">
                 <LanguageToggle />
               </div>
@@ -244,7 +225,7 @@ export function Header() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              <span>status: building</span>
+              <span>{displayStatus}</span>
             </div>
           </div>
         </div>

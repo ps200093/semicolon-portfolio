@@ -4,6 +4,9 @@ import { Geist, Geist_Mono, Space_Grotesk, VT323, IBM_Plex_Mono, Inconsolata, Sh
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/i18n/context"
+import { CursorGlow } from "@/components/cursor-glow"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
 import "./globals.css"
 
 // Configure fonts with proper options
@@ -47,15 +50,15 @@ const shareTechMono = Share_Tech_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://semicolon.it.kr'),
   title: {
     default: "세미콜론 - SEMICOLON;DEV",
     template: "%s | SEMICOLON;DEV",
   },
   description:
-    "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by SEMICOLON;DEV.",
-  keywords: ["Software Engineering", "Web Development", "Next.js", "React", "TypeScript", "AI", "Machine Learning", "Systems Programming", "Code Experiments"],
-  authors: [{ name: "Ehsan Ghaffar", url: "https://github.com/ehsanghaffar" }],
+    "SEMICOLON;DEV explores AI-powered relationship commerce for birthdays, anniversaries, VIP benefits, gift recommendations, and concierge operations.",
+  keywords: ["Relationship Commerce", "AI Gift Recommendation", "B2B2C Commerce", "Birthday Benefits", "Next.js", "AI", "Full-stack Development"],
+  authors: [{ name: "SEMICOLON;DEV", url: "https://semicolon.it.kr" }],
   creator: "SEMICOLON;DEV",
   publisher: "SEMICOLON;DEV",
   generator: "v0.app",
@@ -64,7 +67,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     title: "세미콜론 - SEMICOLON;DEV",
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by SEMICOLON;DEV.",
+    description: "AI-powered relationship commerce for birthdays, anniversaries, VIP benefits, gift recommendations, and concierge operations.",
     siteName: "SEMICOLON;DEV",
     images: [
       {
@@ -78,8 +81,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "세미콜론 - SEMICOLON;DEV",
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts.",
-    creator: "@ehsanghaffar",
+    description: "AI-powered relationship commerce for birthdays, anniversaries, VIP benefits, gift recommendations, and concierge operations.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -121,9 +123,16 @@ export default function RootLayout({
         <link rel="stylesheet" as="style" crossOrigin="anonymous" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
       </head>
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={true} storageKey="theme-mode">
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="theme-mode">
           <LanguageProvider>
-            {children}
+            <main className="relative min-h-screen overflow-hidden scanlines">
+              <CursorGlow />
+              <div className="relative z-10">
+                <Header />
+                {children}
+                <Footer />
+              </div>
+            </main>
           </LanguageProvider>
         </ThemeProvider>
         <Analytics />

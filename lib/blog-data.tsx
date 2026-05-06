@@ -84,9 +84,9 @@ MCP provides the structure needed to build production-grade RAG applications. As
     category: "ai",
     tags: ["llm", "rag", "mcp"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: false,
     color: "from-purple-500/20 to-pink-500/20",
@@ -181,9 +181,9 @@ The migration takes effort but the improved DX and performance are worth it. Sta
     category: "frontend",
     tags: ["nextjs", "tailwind", "react"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: true,
     color: "from-primary/20 to-emerald-500/20",
@@ -269,9 +269,9 @@ You now have a private, scalable LLM API. Consider adding rate limiting, authent
     category: "ai",
     tags: ["llm", "python", "fastapi"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: false,
     color: "from-orange-500/20 to-amber-500/20",
@@ -352,9 +352,9 @@ WASM isn't a silver bullet. The overhead of crossing the JS-WASM boundary can ne
     category: "systems",
     tags: ["rust", "wasm", "performance"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: false,
     color: "from-red-500/20 to-orange-500/20",
@@ -368,7 +368,7 @@ WASM isn't a silver bullet. The overhead of crossing the JS-WASM boundary can ne
     content: `
 ## What Are Design Tokens?
 
-Design tokens are the atomic values of your design system—colors, spacing, typography, shadows. They're platform-agnostic and enable consistency across web, mobile, and design tools.
+Design tokens are the atomic values of your design system-colors, spacing, typography, shadows. They're platform-agnostic and enable consistency across web, mobile, and design tools.
 
 ## Token Hierarchy
 
@@ -441,9 +441,9 @@ Design tokens bridge the gap between design and development. Invest in the found
     category: "frontend",
     tags: ["design-systems", "css", "tokens"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: false,
     color: "from-teal-500/20 to-cyan-500/20",
@@ -691,9 +691,9 @@ Start with a simple launch implementation, add grade passback when needed, and e
     category: "systems",
     tags: ["lti", "education", "integration", "oauth", "jwt"],
     author: {
-      name: "Ehsan Ghaffar",
+      name: "SEMICOLON;DEV",
       avatar: "/developer-portrait.png",
-      role: "Software Engineer",
+      role: "Development Team",
     },
     featured: true,
     color: "from-indigo-500/20 to-blue-500/20",

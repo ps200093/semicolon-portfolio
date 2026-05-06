@@ -121,7 +121,7 @@ export const projectsBase: Omit<Project, 'title' | 'description'>[] = [
   },
   {
     id: 16,
-    tags: [],
+    tags: ["Commerce", "Web", "Brand Site"],
     category: "web & mobile",
     status: "live",
     year: "2024",

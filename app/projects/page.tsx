@@ -1,14 +1,14 @@
 import { ProjectsPageContent } from "@/components/public/projects/projects-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eindev.ir';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://semicolon.it.kr';
 
 export const metadata: Metadata = {
   title: "Projects",
   description: "Explore open source projects, experiments, and tools. From web applications to systems programming, dive into the code.",
   keywords: ["open source", "projects", "web development", "systems programming", "experiments"],
   openGraph: {
-    title: "Projects — SEMICOLON;DEV",
+    title: "Projects - SEMICOLON;DEV",
     description: "Explore open source projects, experiments, and tools.",
     url: `${baseUrl}/projects`,
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects — SEMICOLON;DEV",
+    title: "Projects - SEMICOLON;DEV",
     description: "Explore open source projects, experiments, and tools.",
     images: [`${baseUrl}/og-image-projects.png`],
   },
@@ -33,9 +33,5 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  return (
-    <div className="pt-24">
-      <ProjectsPageContent />
-    </div>
-  );
+  return <ProjectsPageContent />;
 }

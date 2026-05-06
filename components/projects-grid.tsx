@@ -153,7 +153,7 @@ export function ProjectsGrid({
                   "highlight" in project && project.highlight ? "line-clamp-3" : "line-clamp-2",
                 )}
                 dangerouslySetInnerHTML={{
-                  __html: project.description.replace(/\/n/g, '<br />')
+                  __html: project.description.replace(/(?:\/n|\n)/g, '<br />')
                 }}
               />
 

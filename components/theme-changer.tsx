@@ -9,12 +9,12 @@ import { themes, type ThemeColor } from "@/lib/themes"
 const STORAGE_KEY = "color-theme"
 
 export function ThemeChanger() {
-  const [currentTheme, setCurrentTheme] = useState<ThemeColor>("golden")
+  const [currentTheme, setCurrentTheme] = useState<ThemeColor>("rose")
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, systemTheme } = useTheme()
   const themeInitialized = useRef(false)
-  const currentThemeRef = useRef<ThemeColor>("emerald")
+  const currentThemeRef = useRef<ThemeColor>("rose")
 
   // Initialize theme from localStorage only once on mount
   useEffect(() => {
@@ -28,8 +28,8 @@ export function ThemeChanger() {
         currentThemeRef.current = savedTheme
         setCurrentTheme(savedTheme)
       } else {
-        currentThemeRef.current = "emerald"
-        setCurrentTheme("emerald")
+        currentThemeRef.current = "rose"
+        setCurrentTheme("rose")
       }
     }
     themeInitialized.current = true
@@ -80,13 +80,8 @@ export function ThemeChanger() {
     const isDark = effectiveMode === "dark"
     const colors = isDark ? themeConfig.dark : themeConfig.light
 
-    // Use double requestAnimationFrame to ensure DOM is updated after dark class change
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        Object.entries(colors).forEach(([key, value]) => {
-          document.documentElement.style.setProperty(`--${key}`, value)
-        })
-      })
+    Object.entries(colors).forEach(([key, value]) => {
+      document.documentElement.style.setProperty(`--${key}`, value)
     })
   }
 
@@ -157,8 +152,8 @@ export function ThemeChanger() {
           <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
           <div
             className={cn(
-              "absolute right-0 top-12 z-50",
-              "w-48 rounded-lg border border-border",
+              "fixed left-4 right-4 top-24 z-50 sm:absolute sm:left-auto sm:right-0 sm:top-12",
+              "max-h-[min(70vh,24rem)] w-auto overflow-y-auto rounded-lg border border-border sm:w-48",
               "bg-card/95 backdrop-blur-xl shadow-xl",
               "p-3 animate-fade-in",
             )}
