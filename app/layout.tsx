@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Space_Grotesk, VT323, IBM_Plex_Mono, Inconsolata, Share_Tech_Mono } from "next/font/google"
+import { Cascadia_Mono, Geist, Geist_Mono, Space_Grotesk, VT323, IBM_Plex_Mono, Inconsolata, Share_Tech_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/i18n/context"
@@ -46,6 +46,11 @@ const shareTechMono = Share_Tech_Mono({
   weight: '400',
   subsets: ["latin"],
   variable: '--font-share-tech-mono',
+  display: 'swap',
+})
+const cascadiaMono = Cascadia_Mono({
+  subsets: ["latin", "symbols2"],
+  variable: '--font-cascadia-mono',
   display: 'swap',
 })
 
@@ -118,7 +123,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${vt323.variable} ${ibmPlexMono.variable} ${inconsolata.variable} ${shareTechMono.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${vt323.variable} ${ibmPlexMono.variable} ${inconsolata.variable} ${shareTechMono.variable} ${cascadiaMono.variable}`}>
       <head>
         <link rel="stylesheet" as="style" crossOrigin="anonymous" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
       </head>

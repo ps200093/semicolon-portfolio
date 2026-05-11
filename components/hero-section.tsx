@@ -4,46 +4,6 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/lib/i18n/context"
 
-const compactDevLetters = [
-  ["11110", "10001", "10001", "10001", "10001", "10001", "11110"],
-  ["11111", "10000", "10000", "11110", "10000", "10000", "11111"],
-  ["10001", "10001", "10001", "10001", "01010", "01010", "00100"],
-]
-
-function CompactDevMark() {
-  return (
-    <div
-      className="mx-auto w-fit border border-primary px-3 py-4 text-primary sm:px-4"
-      aria-label="DEV terminal mark"
-    >
-      <div className="flex items-start justify-center gap-2 sm:gap-3" aria-hidden="true">
-        {compactDevLetters.map((rows, letterIndex) => (
-          <div key={letterIndex} className="grid gap-1">
-            {rows.map((row, rowIndex) => (
-              <div key={rowIndex} className="grid grid-cols-5 gap-1">
-                {[...row].map((cell, cellIndex) => (
-                  <span
-                    key={cellIndex}
-                    className={
-                      cell === "1"
-                        ? "h-2 w-2 bg-primary/80 sm:h-2.5 sm:w-2.5"
-                        : "h-2 w-2 sm:h-2.5 sm:w-2.5"
-                    }
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-      <div className="mt-4 space-y-1 font-mono text-[11px] leading-none sm:text-xs">
-        <p>&gt; experiments: 12</p>
-        <p>&gt; status: forging</p>
-      </div>
-    </div>
-  )
-}
-
 export function HeroSection() {
   const { t } = useLanguage()
   const [currentRole, setCurrentRole] = useState(0)
@@ -142,12 +102,9 @@ export function HeroSection() {
                 terminal://semicolon
               </div>
 
-              <div className="mb-8 mt-8 block min-[1180px]:hidden">
-                <CompactDevMark />
-              </div>
-
-              <pre className="mx-auto mb-8 mt-8 hidden max-w-full overflow-hidden text-[9.5px] leading-[1.35] text-primary/80 min-[1180px]:block min-[1180px]:text-[11px] 2xl:text-[12px] 2xl:leading-[1.35]" style={{
-                fontFamily: '"Courier New", Courier, monospace',
+              <pre className="mx-auto mb-8 mt-8 max-w-full overflow-hidden text-[9.25px] leading-[1.35] text-primary/80 sm:text-[10px] md:text-[10.5px] min-[1180px]:text-[10.5px] 2xl:text-[11.5px] 2xl:leading-[1.35]" style={{
+                fontFamily:
+                  'var(--font-cascadia-mono), "Cascadia Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
                 whiteSpace: "pre",
                 tabSize: 8,
                 letterSpacing: 0,
@@ -157,6 +114,21 @@ export function HeroSection() {
                 WebkitFontSmoothing: "none",
                 MozOsxFontSmoothing: "grayscale",
               }}>
+                <span className="block min-[1180px]:hidden">{`┌────────────────────────────────────────┐
+│                                        │
+│  ██████████   ██████████ █████   █████ │
+│ ░░███░░░░███ ░░███░░░░░█░░███   ░░███  │
+│  ░███   ░░███ ░███  █ ░  ░███    ░███  │
+│  ░███    ░███ ░██████    ░███    ░███  │
+│  ░███    ░███ ░███░░█    ░░███   ███   │
+│  ░███    ███  ░███ ░   █  ░░░█████░    │
+│  ██████████   ██████████    ░░███      │
+│ ░░░░░░░░░░   ░░░░░░░░░░      ░░░       │
+│                                        │
+│  > experiments: 12                     │
+│  > status: forging                     │
+└────────────────────────────────────────┘`}</span>
+                <span className="hidden min-[1180px]:block">
 {`┌────────────────────────────────────────────────────────────────┐
 │                                                                │
 │   █████████  ██████████ ██████   ██████ █████                  │
@@ -184,6 +156,7 @@ export function HeroSection() {
 │   > last spark: today                                          │
 │                                                                │
 └────────────────────────────────────────────────────────────────┘`}
+                </span>
               </pre>
             </div>
 
