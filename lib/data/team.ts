@@ -83,8 +83,8 @@ export const teamMembers: TeamMember[] = [
       en: "Turns product requirements into stable features and supports web service implementation and iteration.",
     },
     focus: {
-      ko: ["웹 서비스 개발", "기능 구현", "서비스 고도화"],
-      en: ["Web Service Development", "Feature Implementation", "Service Enhancement"],
+      ko: ["백엔드 개발", "기능 구현", "서비스 고도화"],
+      en: ["Backend Development", "Feature Implementation", "Service Enhancement"],
     },
     links: {
       linkedin: "https://www.linkedin.com/in/seunggyo-park-53041b40a/?isSelfProfile=false",
@@ -101,8 +101,8 @@ export const teamMembers: TeamMember[] = [
       en: "Developer",
     },
     summary: {
-      ko: "꼼꼼한 문제 분석과 실용적인 구현을 바탕으로 서비스 품질과 사용자 경험을 함께 끌어올립니다.",
-      en: "Improves service quality and user experience through careful problem analysis and practical implementation.",
+      ko: "서비스 개발 전반에 참여하며, 안정적인 기능 구현과 사용자 경험 개선을 함께 지원합니다.",
+      en: "Contributes across service development, supporting stable feature implementation and user experience improvements.",
     },
     focus: {
       ko: ["소프트웨어 개발", "통합 테스트", "앱 개발"],

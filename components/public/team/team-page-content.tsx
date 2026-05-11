@@ -12,9 +12,9 @@ const fallbackTeamCopy = {
 }
 
 const memberMarks: Record<string, string> = {
-  "hwang-injun": "HJ",
-  "park-sangjun": "SJ",
-  "park-seunggyo": "SG",
+  "hwang-injun": "IH",
+  "park-sangjun": "SP",
+  "park-seunggyo": "SP",
   "jeong-dawon": "DJ",
 }
 
