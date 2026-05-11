@@ -56,14 +56,14 @@ export function HeroSection() {
                 {t("hero.title")}
                 <br />
                 <span
-                  className="break-all bg-gradient-to-l from-primary/50 to-accent bg-clip-text text-transparent typing-cursor [overflow-wrap:anywhere]"
+                  className="break-keep bg-gradient-to-l from-primary/50 to-accent bg-clip-text text-transparent typing-cursor"
                 >
                   {displayText}
                 </span>
               </h1>
             </div>
 
-            <div className="max-w-[22rem] break-words text-base leading-relaxed text-muted-foreground animate-fade-in-up stagger-2 [overflow-wrap:anywhere] sm:max-w-lg sm:text-lg">
+            <div className="max-w-[22rem] break-keep text-pretty text-base leading-relaxed text-muted-foreground animate-fade-in-up stagger-2 sm:max-w-lg sm:text-lg">
               <p>{t("hero.description")}</p>
               <p className="mt-4 whitespace-pre-line">{t("hero.description2")}</p>
             </div>
@@ -91,29 +91,29 @@ export function HeroSection() {
           </div>
 
           {/* Right column - ASCII Art / Visual */}
-          <div className="relative min-w-0">
-            <div className="relative rounded-xl border border-border bg-card/60 glass p-3 sm:p-6 hover-lift">
+          <div className="relative mx-auto w-fit max-w-full min-w-0">
+            <div className="relative overflow-hidden rounded-xl border border-border bg-card/60 glass p-3 sm:p-4 2xl:p-5 hover-lift">
               <div className="absolute left-4 top-4 flex items-center gap-2">
                 <div className="h-3 w-3 rounded-full bg-destructive/60 transition-colors hover:bg-destructive" />
                 <div className="h-3 w-3 rounded-full bg-yellow-500/60 transition-colors hover:bg-yellow-500" />
                 <div className="h-3 w-3 rounded-full bg-primary/60 transition-colors hover:bg-primary" />
               </div>
-              <div className="absolute left-1/2 top-3.5 -translate-x-1/2 rounded-md bg-background/50 px-3 py-1 font-mono text-xs text-muted-foreground">
+              <div className="absolute left-1/2 top-3.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-background/50 px-3 py-1 font-mono text-xs text-muted-foreground">
                 terminal://semicolon
               </div>
 
-              <pre className="mb-8 mt-6 overflow-visible text-[11px] leading-[1.35] text-primary/80 sm:text-[13px] sm:leading-[1.35]" style={{
+              <pre className="mx-auto mb-8 mt-8 max-w-full overflow-hidden text-[9.5px] leading-[1.35] text-primary/80 sm:text-[10.5px] md:text-[11px] min-[1180px]:text-[11px] 2xl:text-[12px] 2xl:leading-[1.35]" style={{
                 fontFamily: '"Courier New", Courier, monospace',
                 whiteSpace: "pre",
                 tabSize: 8,
-                letterSpacing: "0.05em",
+                letterSpacing: 0,
                 fontVariantLigatures: "none",
                 fontFeatureSettings: '"liga" 0',
                 textRendering: "geometricPrecision",
                 WebkitFontSmoothing: "none",
                 MozOsxFontSmoothing: "grayscale",
               }}>
-                <span className="block sm:hidden">{`┌────────────────────────────────────────┐
+                <span className="block min-[1180px]:hidden">{`┌────────────────────────────────────────┐
 │                                        │
 │  ██████████   ██████████ █████   █████ │
 │ ░░███░░░░███ ░░███░░░░░█░░███   ░░███  │
@@ -127,7 +127,7 @@ export function HeroSection() {
 │  > experiments: 12                     │
 │  > status: forging                     │
 └────────────────────────────────────────┘`}</span>
-                <span className="hidden sm:block">{`┌────────────────────────────────────────────────────────────────┐
+                <span className="hidden min-[1180px]:block">{`┌────────────────────────────────────────────────────────────────┐
 │                                                                │
 │   █████████  ██████████ ██████   ██████ █████                  │
 │  ███░░░░░███░░███░░░░░█░░██████ ██████ ░░███                   │
@@ -157,14 +157,14 @@ export function HeroSection() {
               </pre>
             </div>
 
-            <div className="absolute -right-2 -top-2 rounded-lg border border-primary/40 bg-primary/15 glass px-3 py-1.5 font-mono text-[11px] text-primary animate-float sm:-right-6 sm:-top-6 sm:px-4 sm:text-xs">
+            <div className="absolute -right-3 -top-3 rounded-lg border border-primary/40 bg-primary/15 glass px-3 py-1.5 font-mono text-[11px] text-primary animate-float sm:-right-4 sm:-top-4 sm:px-4 sm:text-xs 2xl:-right-6 2xl:-top-6">
               <span className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
                 v1.2.7
               </span>
             </div>
             <div
-              className="absolute -bottom-3 -left-2 rounded-lg border border-border bg-card glass px-3 py-1.5 font-mono text-[11px] text-muted-foreground animate-float sm:-bottom-6 sm:-left-6 sm:px-4 sm:text-xs"
+              className="absolute -bottom-3 left-3 rounded-lg border border-border bg-card glass px-3 py-1.5 font-mono text-[11px] text-muted-foreground animate-float sm:left-4 sm:px-4 sm:text-xs min-[1180px]:-left-4 2xl:-bottom-6 2xl:-left-6"
               style={{ animationDelay: "1s" }}
             >
               May. 2026

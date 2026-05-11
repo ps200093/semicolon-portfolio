@@ -85,7 +85,7 @@ export function ProductsPageContent() {
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                 {copy.heroTitle}
               </h1>
-              <p className="max-w-3xl break-words text-base leading-relaxed text-muted-foreground [overflow-wrap:anywhere] sm:text-lg">
+              <p className="max-w-3xl break-keep text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
                 {copy.heroDescription}
               </p>
               <div className="flex flex-wrap gap-3">
