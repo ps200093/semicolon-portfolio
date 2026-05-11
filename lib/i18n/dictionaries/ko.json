@@ -225,16 +225,16 @@
   },
   "team": {
     "hero": {
-      "badge": "Founder & Team",
+      "badge": "대표 & 팀",
       "title": "제품과 사업을 함께 설계하는 팀",
       "description": "SEMICOLON;DEV는 아이디어를 실제 서비스로 만들기 위해 제품 기획, 풀스택 개발, 파트너 운영, 커머스 구조를 함께 다룹니다."
     },
     "members": {
-      "title": "Core Team",
+      "title": "핵심 팀",
       "description": "작은 팀으로 빠르게 실험하고, 필요한 파트너와 함께 시장 진입에 필요한 제품 구조와 운영 흐름을 설계합니다.",
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "email": "Email"
+      "linkedin": "링크드인",
+      "github": "깃허브",
+      "email": "이메일"
     }
   },
   "projects": {

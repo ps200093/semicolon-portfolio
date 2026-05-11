@@ -4,17 +4,17 @@ import { useEffect, useState, useRef } from "react"
 import { useTheme } from "next-themes"
 import { Palette } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { themes, type ThemeColor } from "@/lib/themes"
+import { DEFAULT_COLOR_THEME, themes, type ThemeColor } from "@/lib/themes"
 
 const STORAGE_KEY = "color-theme"
 
 export function ThemeChanger() {
-  const [currentTheme, setCurrentTheme] = useState<ThemeColor>("rose")
+  const [currentTheme, setCurrentTheme] = useState<ThemeColor>(DEFAULT_COLOR_THEME)
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, systemTheme } = useTheme()
   const themeInitialized = useRef(false)
-  const currentThemeRef = useRef<ThemeColor>("rose")
+  const currentThemeRef = useRef<ThemeColor>(DEFAULT_COLOR_THEME)
 
   // Initialize theme from localStorage only once on mount
   useEffect(() => {
@@ -28,8 +28,9 @@ export function ThemeChanger() {
         currentThemeRef.current = savedTheme
         setCurrentTheme(savedTheme)
       } else {
-        currentThemeRef.current = "rose"
-        setCurrentTheme("rose")
+        currentThemeRef.current = DEFAULT_COLOR_THEME
+        setCurrentTheme(DEFAULT_COLOR_THEME)
+        localStorage.setItem(STORAGE_KEY, DEFAULT_COLOR_THEME)
       }
     }
     themeInitialized.current = true

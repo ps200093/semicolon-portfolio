@@ -13,8 +13,9 @@ const fallbackTeamCopy = {
 
 const memberMarks: Record<string, string> = {
   "hwang-injun": "HJ",
-  "commerce-partnership": "CP",
-  "payment-infrastructure": "PI",
+  "park-sangjun": "SJ",
+  "park-seunggyo": "SG",
+  "jeong-dawon": "DJ",
 }
 
 export function TeamPageContent() {
@@ -66,7 +67,7 @@ export function TeamPageContent() {
                       {memberMarks[member.id] || "TM"}
                     </div>
                     <div className="min-w-0">
-                      <h3 className="text-xl font-bold tracking-tight">{member.name}</h3>
+                      <h3 className="text-xl font-bold tracking-tight">{member.name[language]}</h3>
                       <p className="mt-1 font-mono text-xs uppercase tracking-wider text-primary">
                         {member.role[language]}
                       </p>

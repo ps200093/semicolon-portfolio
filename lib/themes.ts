@@ -227,3 +227,5 @@ export const themes = {
 } as const
 
 export type ThemeColor = keyof typeof themes
+
+export const DEFAULT_COLOR_THEME = "rose" satisfies ThemeColor
