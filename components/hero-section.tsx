@@ -43,9 +43,9 @@ export function HeroSection() {
   }, [displayText, isDeleting, currentRole, roles])
 
   return (
-    <section className="relative px-4 sm:px-6 pt-28 sm:pt-36 pb-16 sm:pb-24">
+    <section className="relative px-4 sm:px-6 pt-28 sm:pt-36 pb-2 sm:pb-24">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 lg:items-center lg:min-h-[70vh]">
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20 lg:items-center lg:min-h-[70vh]">
           {/* Left column - Text */}
           <div className="min-w-0 space-y-8 sm:space-y-10">
             <div className="space-y-3 animate-fade-in-up">
@@ -98,11 +98,11 @@ export function HeroSection() {
                 <div className="h-3 w-3 rounded-full bg-yellow-500/60 transition-colors hover:bg-yellow-500" />
                 <div className="h-3 w-3 rounded-full bg-primary/60 transition-colors hover:bg-primary" />
               </div>
-              <div className="absolute left-1/2 top-3.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-background/50 px-3 py-1 font-mono text-xs text-muted-foreground">
+              <div className="absolute left-[62%] top-3.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-background/50 px-2 py-1 font-mono text-[11px] text-muted-foreground sm:left-1/2 sm:px-3 sm:text-xs">
                 terminal://semicolon
               </div>
 
-              <pre className="mx-auto mb-8 mt-8 max-w-full overflow-hidden text-[9.25px] leading-[1.35] text-primary/80 sm:text-[10px] md:text-[10.5px] min-[1180px]:text-[10.5px] 2xl:text-[11.5px] 2xl:leading-[1.35]" style={{
+              <pre className="mx-auto mb-5 mt-8 max-w-full overflow-hidden text-[9.25px] leading-[1.35] text-primary/80 sm:mb-8 sm:text-[10px] md:text-[10.5px] min-[1180px]:text-[10.5px] 2xl:text-[11.5px] 2xl:leading-[1.35]" style={{
                 fontFamily:
                   'var(--font-cascadia-mono), "Cascadia Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
                 whiteSpace: "pre",
@@ -167,7 +167,7 @@ export function HeroSection() {
               </span>
             </div>
             <div
-              className="absolute -bottom-3 left-3 rounded-lg border border-border bg-card glass px-3 py-1.5 font-mono text-[11px] text-muted-foreground animate-float sm:left-4 sm:px-4 sm:text-xs min-[1180px]:-left-4 2xl:-bottom-6 2xl:-left-6"
+              className="absolute -bottom-2 left-3 rounded-lg border border-border bg-card glass px-3 py-1.5 font-mono text-[11px] text-muted-foreground animate-float sm:-bottom-3 sm:left-4 sm:px-4 sm:text-xs min-[1180px]:-left-4 2xl:-bottom-6 2xl:-left-6"
               style={{ animationDelay: "1s" }}
             >
               May. 2026

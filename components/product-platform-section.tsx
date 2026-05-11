@@ -63,7 +63,7 @@ export function ProductPlatformSection() {
         }
 
   return (
-    <section id="product-platform" className="border-t border-border/30 px-4 py-20 sm:px-6 sm:py-28">
+    <section id="product-platform" className="border-t border-border/30 px-4 pb-20 pt-4 sm:px-6 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="space-y-4 animate-fade-in-up">
