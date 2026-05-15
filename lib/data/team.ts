@@ -43,6 +43,7 @@ export const teamMembers: TeamMember[] = [
       en: ["Business Operations", "Business Strategy", "Product Direction"],
     },
     links: {
+      linkedin: "https://www.linkedin.com/in/semicolon-dev-463090408/",
       email: "contact@semicolon.it.kr",
     },
   },
