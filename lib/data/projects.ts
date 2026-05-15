@@ -9,6 +9,10 @@ export interface Project {
   image?: string
   homepage?: string
   live?: string
+  appLinks?: {
+    android?: string
+    ios?: string
+  }
   url?: string
   stars?: number
   forks?: number
@@ -17,6 +21,20 @@ export interface Project {
 }
 
 export const projectsBase: Omit<Project, 'title' | 'description'>[] = [
+  {
+    id: 10,
+    tags: ["Android", "iOS", "React Native", "Next.js", "MongoDB", "AppTech"],
+    category: "web & mobile",
+    status: "live",
+    year: "2026",
+    image: "/projects/kaego_app_icon.png",
+    appLinks: {
+      android: "https://play.google.com/store/apps/details?id=com.semicolon.kaego",
+      ios: "https://apps.apple.com/app/id6758087018",
+    },
+    featured: true,
+    highlight: true,
+  },
   {
     id: 0,
     tags: ["Next.js", "Node.js", "ReactNative", "PostgreSQL", "Redis", "AWS", "AdTech"],
@@ -27,7 +45,6 @@ export const projectsBase: Omit<Project, 'title' | 'description'>[] = [
     homepage: "https://qro-qr.com",
     live: "https://app.qro-qr.com",
     featured: true,
-    highlight: true,
   },
   {
     id: 1,
@@ -110,15 +127,6 @@ export const projectsBase: Omit<Project, 'title' | 'description'>[] = [
     featured: true,
   },
 
-  {
-    id: 10,
-    tags: ["React Native", "Node.js", "SDK", "Payment"],
-    category: "web & mobile",
-    status: "development",
-    year: "2026",
-    image: "/projects/keago.png",
-    featured: true,
-  },
   {
     id: 16,
     tags: ["Commerce", "Web", "Brand Site"],

@@ -2,10 +2,10 @@
 
 import { useState, useEffect, useRef, useMemo } from "react"
 import { cn } from "@/lib/utils"
-import { ExternalLink, Sparkles, Search, Filter, Home } from "lucide-react"
+import { Apple, ExternalLink, Sparkles, Search, Filter, Home, Smartphone } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
-import { projectsBase, statusFilters, categories, getProjects, getStatusLabels, getCategoryLabels } from "@/lib/data/projects"
+import { statusFilters, categories, getProjects, getStatusLabels, getCategoryLabels } from "@/lib/data/projects"
 import { useLanguage } from "@/lib/i18n/context"
 
 const statusFiltersList = statusFilters
@@ -289,7 +289,31 @@ export function ProjectsPageContent() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
+                {project.appLinks?.android && (
+                  <a
+                    href={project.appLinks.android}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-mono text-xs text-primary hover:text-foreground transition-all duration-300 group/link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Smartphone className="h-4 w-4 transition-transform group-hover/link:scale-110 group-hover/link:rotate-12" />
+                    <span className="underline-animate">Android</span>
+                  </a>
+                )}
+                {project.appLinks?.ios && (
+                  <a
+                    href={project.appLinks.ios}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-mono text-xs text-primary hover:text-foreground transition-all duration-300 group/link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Apple className="h-4 w-4 transition-transform group-hover/link:scale-110 group-hover/link:rotate-12" />
+                    <span className="underline-animate">iOS</span>
+                  </a>
+                )}
                 {project.homepage && (
                   <a
                     href={project.homepage}

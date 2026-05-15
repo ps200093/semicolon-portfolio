@@ -21,7 +21,7 @@ export default function Home() {
       />
       <HeroSection />
       <ProductPlatformSection />
-      <ProjectsGrid displayProjectIds={[0, 1, 3, 2, 5, 6, 4, 7]} />
+      <ProjectsGrid displayProjectIds={[10, 1, 3, 2, 5, 6, 4, 7]} />
       <Workbench />
     </>
   )

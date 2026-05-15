@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { cn } from "@/lib/utils"
-import { ExternalLink, Sparkles, Home, ArrowRight } from "lucide-react"
+import { Apple, ExternalLink, Sparkles, Home, ArrowRight, Smartphone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { projectsBase, categories, getProjects, getStatusLabels, getCategoryLabels } from "@/lib/data/projects"
+import { categories, getProjects, getStatusLabels, getCategoryLabels } from "@/lib/data/projects"
 import { useLanguage } from "@/lib/i18n/context"
 
 const filters = categories
@@ -15,7 +15,7 @@ interface ProjectsGridProps {
 }
 
 export function ProjectsGrid({ 
-  displayProjectIds = [0, 1, 3, 2, 5, 6, 4, 7],
+  displayProjectIds = [10, 1, 3, 2, 5, 6, 4, 7],
 }: ProjectsGridProps) {
   const [activeFilter, setActiveFilter] = useState("all")
   const { getTranslations, t } = useLanguage()
@@ -32,8 +32,12 @@ export function ProjectsGrid({
   const categoryLabels = getCategoryLabels(translations)
 
   // displayProjectIds가 제공되면 해당 ID의 프로젝트만 표시
-  const displayProjects = displayProjectIds 
-    ? projects.filter(p => displayProjectIds.includes(p.id))
+  const projectById = new Map(projects.map((project) => [project.id, project]))
+  const displayProjects = displayProjectIds
+    ? displayProjectIds.flatMap((id) => {
+        const project = projectById.get(id)
+        return project ? [project] : []
+      })
     : projects
 
   const filteredProjects = activeFilter === "all" 
@@ -168,7 +172,31 @@ export function ProjectsGrid({
                 ))}
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
+                {project.appLinks?.android && (
+                  <a
+                    href={project.appLinks.android}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-mono text-xs text-primary hover:text-foreground transition-all duration-300 group/link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Smartphone className="h-4 w-4 transition-transform group-hover/link:scale-110 group-hover/link:rotate-12" />
+                    <span className="underline-animate">Android</span>
+                  </a>
+                )}
+                {project.appLinks?.ios && (
+                  <a
+                    href={project.appLinks.ios}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-mono text-xs text-primary hover:text-foreground transition-all duration-300 group/link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Apple className="h-4 w-4 transition-transform group-hover/link:scale-110 group-hover/link:rotate-12" />
+                    <span className="underline-animate">iOS</span>
+                  </a>
+                )}
                 {project.homepage && (
                   <a
                     href={project.homepage}
