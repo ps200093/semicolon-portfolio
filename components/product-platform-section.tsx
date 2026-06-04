@@ -87,7 +87,7 @@ export function ProductPlatformSection() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                href="/team"
+                href="/about"
                 className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-semibold text-muted-foreground transition-all hover:border-primary/50 hover:text-foreground"
               >
                 {copy.ctaSecondary}

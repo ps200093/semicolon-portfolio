@@ -4,7 +4,6 @@
     "product": "Product",
     "projects": "Projects",
     "introduction": "About",
-    "team": "Team",
     "philosophy": "Philosophy",
     "blog": "Blog",
     "notes": "Notes"
@@ -222,20 +221,6 @@
     "tagline": "Active Workbench",
     "title": "What we are building now",
     "description": "A quick look at experiments and internal systems currently moving through the workshop."
-  },
-  "team": {
-    "hero": {
-      "badge": "Founder & Team",
-      "title": "A team shaping product and business together",
-      "description": "SEMICOLON;DEV brings product planning, full-stack engineering, partner operations, and commerce structure into one practical build process."
-    },
-    "members": {
-      "title": "Core Team",
-      "description": "We move quickly as a small team and work with partners to shape the product architecture and operating flows needed for market entry.",
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "email": "Email"
-    }
   },
   "projects": {
     "title": "All Projects",

@@ -63,7 +63,7 @@ export const platformCopy = {
       { value: "Admin", label: "컨시어지 운영 콘솔" },
     ],
     ctaPrimary: "제품 상세 보기",
-    ctaSecondary: "팀 정보 확인",
+    ctaSecondary: "회사 소개 보기",
   },
   en: {
     eyebrow: "Product Platform",
@@ -127,6 +127,6 @@ export const platformCopy = {
       { value: "Admin", label: "Concierge operations console" },
     ],
     ctaPrimary: "View product details",
-    ctaSecondary: "Meet the team",
+    ctaSecondary: "About SEMICOLON;DEV",
   },
 } as const

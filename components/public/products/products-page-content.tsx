@@ -90,7 +90,7 @@ export function ProductsPageContent() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/team"
+                  href="/about"
                   className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:gap-3"
                 >
                   {copy.ctaSecondary}

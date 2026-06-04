@@ -12,7 +12,7 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     author: {
       '@type': 'Person',
       name: post.author.name,
-      url: 'https://semicolon.it.kr/team',
+      url: 'https://semicolon.it.kr',
     },
     publisher: {
       '@type': 'Organization',

@@ -13,7 +13,6 @@ const navItems = [
   { labelKey: "nav.introduction", fallback: "About", href: "/about" },
   { labelKey: "nav.product", fallback: "Product", href: "/product" },
   { labelKey: "nav.projects", fallback: "Projects", href: "/projects" },
-  { labelKey: "nav.team", fallback: "Team", href: "/team" },
   // { label: "Notes", href: "/notes" },
   { labelKey: "nav.philosophy", fallback: "Philosophy", href: "/philosophy" },
   // { label: "Blog", href: "/blog" },
