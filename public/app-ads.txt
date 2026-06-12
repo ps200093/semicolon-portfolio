@@ -1222,3 +1222,8 @@ zmaticoo.com,5135063,RESELLER
 zmaticoo.com,5135224,RESELLER
 zmaticoo.com,5135302,RESELLER
 zoomd.com,88478941,RESELLER
+bluexad.ai, 1996418805747683328, RESELLER
+insticator.com, cadff748-965f-4393-a76e-a8f902512bad, RESELLER, b3511ffcafb23a32
+pubmatic.com, 165329, RESELLER, 5d62403b186f2ace
+pubnative.net, 1017792, RESELLER, d641df8625486a7b
+video.unrulymedia.com, 905340553, RESELLER
