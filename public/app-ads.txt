@@ -367,7 +367,6 @@ mars.media,1010422,RESELLER,8624339f102fb076
 mars.media,1010450,RESELLER,8624339f102fb076
 mars.media,103116,RESELLER
 media.net,8CU12AQ1Y,RESELLER
-media.net,8cu12aq1y,RESELLER
 media.net,8CUD06Z68,RESELLER
 media.net,8CUN37DCC,RESELLER
 meitu.com,149,RESELLER
@@ -639,7 +638,6 @@ sharethrough.com,DQQogebZ,RESELLER,d53b998a7bd4ecd2
 sharethrough.com,K6tB2uM1,RESELLER,d53b998a7bd4ecd2
 sharethrough.com,NNB0Zl76,RESELLER,d53b998a7bd4ecd2
 sharethrough.com,bXzzb1bR,RESELLER,d53b998a7bd4ecd2
-sharethrough.com,bxzzb1br,RESELLER,d53b998a7bd4ecd2
 sharethrough.com,r4ScMSsf,RESELLER,d53b998a7bd4ecd2
 smaato.com,1100004890,DIRECT,07bcf65f187117b4
 smaato.com,110004021,DIRECT,07bcf65f187117b4
@@ -840,7 +838,6 @@ appnexus.com,12061,RESELLER,f5ab79cb980f11d1
 appnexus.com,11826,RESELLER,f5ab79cb980f11d1
 kidoz.net,14260,RESELLER,a109366414b7335e
 openx.com,561446248,RESELLER,6a698e2ec38604c6
-sharethrough.com,bc6d1whs,RESELLER,d53b998a7bd4ecd2
 ogury.com,065d4ff5-a269-44be-9634-9d4d7af2dfc3,RESELLER
 video.unrulymedia.com,389957698,RESELLER
 pubmatic.com,161151,RESELLER,5d62403b186f2ace
@@ -856,7 +853,6 @@ rubiconproject.com,25336,RESELLER,0bfd66d529a55807
 mars.media,1010442,RESELLER
 xandr.com,17779,RESELLER
 betweendigital.com,45827,RESELLER
-media.net,8cu9b72o6,RESELLER
 rubiconproject.com,13380,RESELLER,0bfd66d529a55807
 admanmedia.com,2242,RESELLER
 smaato.com,1100059375,RESELLER,07bcf65f187117b4
@@ -966,10 +962,10 @@ start.io,168507669,RESELLER
 rubiconproject.com,25978,RESELLER,0bfd66d529a55807
 rubiconproject.com,17960,RESELLER,0bfd66d529a55807
 anzu.io,691e95644e633a6eee2567ee,RESELLER,1c1b7acf4992136c
-e-planning.net, 6a7f877127485fdb, RESELLER, c1ba615865ed87b2
-media.net, 8CU675N41, RESELLER
-themediagrid.com, FALINO, RESELLER, 9fac4a4a87c2a44f
-video.unrulymedia.com, 703273072, RESELLER
+e-planning.net,6a7f877127485fdb,RESELLER,c1ba615865ed87b2
+media.net,8CU675N41,RESELLER
+themediagrid.com,FALINO,RESELLER,9fac4a4a87c2a44f
+video.unrulymedia.com,703273072,RESELLER
 vungle.com,6a1e694f4bca6570e1168c7e,DIRECT,c107d686becd2d77
 33across.com,001Pg0000197KcKIAU,RESELLER,bbea06d9c4d2853c
 contextweb.com,562852,RESELLER,89ff185a4c4e857c
@@ -1222,8 +1218,8 @@ zmaticoo.com,5135063,RESELLER
 zmaticoo.com,5135224,RESELLER
 zmaticoo.com,5135302,RESELLER
 zoomd.com,88478941,RESELLER
-bluexad.ai, 1996418805747683328, RESELLER
-insticator.com, cadff748-965f-4393-a76e-a8f902512bad, RESELLER, b3511ffcafb23a32
-pubmatic.com, 165329, RESELLER, 5d62403b186f2ace
-pubnative.net, 1017792, RESELLER, d641df8625486a7b
-video.unrulymedia.com, 905340553, RESELLER
+bluexad.ai,1996418805747683328,RESELLER
+insticator.com,cadff748-965f-4393-a76e-a8f902512bad,RESELLER,b3511ffcafb23a32
+pubmatic.com,165329,RESELLER,5d62403b186f2ace
+pubnative.net,1017792,RESELLER,d641df8625486a7b
+video.unrulymedia.com,905340553,RESELLER
